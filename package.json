@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"no test specified\"",
-    "build": "./dockerfile/build.sh maven"
+    "build": "./build.sh"
   },
   "repository": {
     "type": "git",
