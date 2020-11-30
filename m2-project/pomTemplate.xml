@@ -12,7 +12,7 @@
     <artifactId>algorithm-example</artifactId>
     <repositories>
         <repository>
-            <id>private_repo</id>
+            <id>snapshots</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </repository>
     </repositories>
