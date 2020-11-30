@@ -155,7 +155,7 @@ under the License.
       <url>http://localhost:8080/repository/internal</url>
     </mirror>
         <mirror>
-      <id>mirrorId</id>
+      <id>snapshots</id>
       <mirrorOf>snapshots</mirrorOf>
       <name>snapshots</name>
       <url>http://localhost:8080/repository/snapshots</url>
