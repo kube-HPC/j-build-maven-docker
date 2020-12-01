@@ -1,0 +1,350 @@
+2020-12-01 15:05:35,855+0000 INFO  [jetty-main-1]  org.sonatype.nexus.events.EventSubscriberHost - Initialized
+2020-12-01 15:05:35,857+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - 
+-------------------------------------------------
+
+Initializing Nexus Repository Manager OSS 2.14.19-01
+
+-------------------------------------------------
+2020-12-01 15:05:35,857+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Activating locally installed plugins...
+2020-12-01 15:05:37,600+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.bcprov.CryptoPlugin - Unlimited strength JCE policy detected
+2020-12-01 15:05:38,223+0000 INFO  [jetty-main-1]  com.sun.jersey.server.impl.application.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+2020-12-01 15:05:38,891+0000 INFO  [jetty-main-1]  org.sonatype.nexus.kazuki.KazukiPlugin - Kazuki version: 0.1.8
+2020-12-01 15:05:39,617+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryTypeRegistry - Registered Repository type RepositoryType=(org.sonatype.nexus.proxy.repository.GroupRepository:npm-group).
+2020-12-01 15:05:39,617+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryTypeRegistry - Registered Repository type RepositoryType=(org.sonatype.nexus.proxy.repository.Repository:npm-proxy).
+2020-12-01 15:05:39,617+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryTypeRegistry - Registered Repository type RepositoryType=(org.sonatype.nexus.proxy.repository.Repository:npm-hosted).
+2020-12-01 15:05:39,692+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryTypeRegistry - Registered Repository type RepositoryType=(org.sonatype.nexus.proxy.repository.GroupRepository:nuget-group).
+2020-12-01 15:05:39,692+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryTypeRegistry - Registered Repository type RepositoryType=(org.sonatype.nexus.proxy.repository.Repository:nuget-proxy).
+2020-12-01 15:05:39,692+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryTypeRegistry - Registered Repository type RepositoryType=(org.sonatype.nexus.proxy.repository.ShadowRepository:nuget-shadow).
+2020-12-01 15:05:40,233+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryTypeRegistry - Registered Repository type RepositoryType=(org.sonatype.nexus.proxy.repository.GroupRepository:rubygems-group).
+2020-12-01 15:05:40,234+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryTypeRegistry - Registered Repository type RepositoryType=(org.sonatype.nexus.proxy.repository.Repository:rubygems-proxy).
+2020-12-01 15:05:40,234+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryTypeRegistry - Registered Repository type RepositoryType=(org.sonatype.nexus.proxy.repository.Repository:rubygems-hosted).
+2020-12-01 15:05:40,883+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryTypeRegistry - Registered Repository type RepositoryType=(org.sonatype.nexus.proxy.repository.WebSiteRepository:site).
+2020-12-01 15:05:41,135+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-archetype-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,135+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-plugin-console-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,135+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-indexer-lucene-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,135+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-maven-bridge-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,135+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-atlas-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,135+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-kazuki-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,135+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "com.sonatype.nexus.plugins:nexus-outreach-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,135+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-groovy-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,135+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "com.sonatype.nexus.plugins:nexus-migrationagent-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,135+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-rrb-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,135+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-content-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,135+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-orient-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,135+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-h2-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,135+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-capabilities-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,135+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-crypto-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,136+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-rutauth-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,136+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-site-repository-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,136+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "com.sonatype.nexus.plugins:nexus-nuget-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,136+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-logging-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,136+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-ldap-realm-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,136+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-timeline-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,136+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-lvo-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,136+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-npm-repository-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,136+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "com.sonatype.nexus.plugins:nexus-iq-repository-oss-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,136+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-wonderland-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,136+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-restlet1x-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,136+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-webresources-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,136+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-ruby-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,136+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-siesta-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,136+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "com.sonatype.nexus.plugins:nexus-analytics-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,136+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-yum-repository-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,136+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-ui-extjs3-plugin:2.14.19-01" was successful.
+2020-12-01 15:05:41,136+0000 INFO  [jetty-main-1]  org.sonatype.nexus.events.EventSubscriberHost - Starting
+2020-12-01 15:05:41,162+0000 INFO  [jetty-main-1]  org.sonatype.nexus.timeline.DefaultNexusTimeline - Initializing Nexus Timeline...
+2020-12-01 15:05:41,162+0000 INFO  [jetty-main-1]  org.sonatype.nexus.timeline.DefaultNexusTimeline - Starting Nexus Timeline...
+2020-12-01 15:05:41,245+0000 INFO  [jetty-main-1]  org.sonatype.timeline.internal.DefaultTimeline - Started Timeline...
+2020-12-01 15:05:41,450+0000 INFO  [jetty-main-1]  org.sonatype.nexus.apachehttpclient.Hc4ProviderImpl - Started (connectionPoolMaxSize 200, connectionPoolSize 20, connectionPoolIdleTime 30000 ms, connectionPoolTimeout 30000 ms, keepAliveMaxDuration 30000 ms)
+2020-12-01 15:05:41,824+0000 INFO  [jetty-main-1]  org.sonatype.nexus.orient.DatabaseServerImpl - OrientDB version: 2.1.14
+2020-12-01 15:05:41,833+0000 INFO  [jetty-main-1]  com.orientechnologies.orient.server.OServer - OrientDB Server v2.1.14 is starting up...
+2020-12-01 15:05:41,836+0000 INFO  [jetty-main-1]  com.orientechnologies.orient.server.OServer - Databases directory: /sonatype-work/db
+2020-12-01 15:05:41,841+0000 INFO  [jetty-main-1]  com.orientechnologies.orient.server.handler.OJMXPlugin - JMX plugin installed and active: profilerManaged=true
+2020-12-01 15:05:41,842+0000 INFO  [jetty-main-1]  com.orientechnologies.orient.server.OServer - OrientDB Server v2.1.14 is active.
+2020-12-01 15:05:41,842+0000 INFO  [jetty-main-1]  org.sonatype.nexus.orient.DatabaseServerImpl - Activated
+2020-12-01 15:05:41,842+0000 INFO  [jetty-main-1]  org.sonatype.nexus.configuration.application.DefaultNexusConfiguration - Loading Nexus Configuration...
+2020-12-01 15:05:41,851+0000 INFO  [jetty-main-1]  org.sonatype.nexus.configuration.source.StaticConfigurationSource - Configuration loaded successfully.
+2020-12-01 15:05:41,851+0000 WARN  [jetty-main-1]  org.sonatype.nexus.configuration.source.FileConfigurationSource - No configuration file in place, copying the default one and continuing with it.
+2020-12-01 15:05:41,908+0000 INFO  [jetty-main-1]  org.sonatype.nexus.configuration.source.FileConfigurationSource - Configuration loaded successfully.
+2020-12-01 15:05:41,924+0000 INFO  [jetty-main-1]  org.sonatype.nexus.configuration.source.FileConfigurationSource - Nexus configuration validated successfully.
+2020-12-01 15:05:41,943+0000 INFO  [jetty-main-1]  org.sonatype.nexus.configuration.application.DefaultNexusConfiguration - Applying Nexus Configuration...
+2020-12-01 15:05:41,946+0000 INFO  [jetty-main-1]  org.sonatype.security.configuration.source.FileSecurityConfigurationSource - Loading Security configuration from /sonatype-work/conf/security-configuration.xml
+2020-12-01 15:05:41,949+0000 INFO  [jetty-main-1]  org.apache.shiro.cache.ehcache.EhCacheManager - Cache with name 'XmlAuthenticatingRealm.authorizationCache' does not yet exist.  Creating now.
+2020-12-01 15:05:41,950+0000 INFO  [jetty-main-1]  org.apache.shiro.cache.ehcache.EhCacheManager - Added EhCache named [XmlAuthenticatingRealm.authorizationCache]
+2020-12-01 15:05:41,951+0000 INFO  [jetty-main-1]  org.apache.shiro.cache.ehcache.EhCacheManager - Cache with name 'XmlAuthorizingRealm.authorizationCache' does not yet exist.  Creating now.
+2020-12-01 15:05:41,951+0000 INFO  [jetty-main-1]  org.apache.shiro.cache.ehcache.EhCacheManager - Added EhCache named [XmlAuthorizingRealm.authorizationCache]
+2020-12-01 15:05:41,966+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.attributes.DefaultLSAttributeStorage - Default FS AttributeStorage in place, using JacksonJSON marshaller. 
+2020-12-01 15:05:42,135+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository "Central" [id=central][contentClass=Maven2][mainFacet=org.sonatype.nexus.proxy.maven.MavenProxyRepository]
+2020-12-01 15:05:42,168+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository "Apache Snapshots" [id=apache-snapshots][contentClass=Maven2][mainFacet=org.sonatype.nexus.proxy.maven.MavenProxyRepository]
+2020-12-01 15:05:42,198+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository "Releases" [id=releases][contentClass=Maven2][mainFacet=org.sonatype.nexus.proxy.maven.MavenHostedRepository]
+2020-12-01 15:05:42,243+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository "Snapshots" [id=snapshots][contentClass=Maven2][mainFacet=org.sonatype.nexus.proxy.maven.MavenHostedRepository]
+2020-12-01 15:05:42,274+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository "3rd party" [id=thirdparty][contentClass=Maven2][mainFacet=org.sonatype.nexus.proxy.maven.MavenHostedRepository]
+2020-12-01 15:05:42,286+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository "Central M1 shadow" [id=central-m1][contentClass=Maven1][mainFacet=org.sonatype.nexus.proxy.maven.MavenShadowRepository]
+2020-12-01 15:05:42,304+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository "Public Repositories" [id=public][contentClass=Maven2][mainFacet=org.sonatype.nexus.proxy.repository.GroupRepository]
+2020-12-01 15:05:42,305+0000 INFO  [jetty-main-1]  org.sonatype.scheduling.DefaultScheduler - Initializing Scheduler...
+2020-12-01 15:05:42,305+0000 INFO  [jetty-main-1]  org.sonatype.nexus.scheduling.internal.DefaultTaskConfigManager - 0 task(s) to load.
+2020-12-01 15:05:42,305+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - This is 1st start of new Nexus instance.
+2020-12-01 15:05:42,305+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Nexus Work Directory : /sonatype-work
+2020-12-01 15:05:42,305+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Started Nexus Repository Manager OSS 2.14.19-01
+2020-12-01 15:05:42,308+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.targets.DefaultTargetRegistryEventInspector - Adding default target for site content class
+2020-12-01 15:05:42,309+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.targets.DefaultTargetRegistryEventInspector - Adding default target for npm content class
+2020-12-01 15:05:42,309+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.targets.DefaultTargetRegistryEventInspector - Adding default target for nuget content class
+2020-12-01 15:05:42,309+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.targets.DefaultTargetRegistryEventInspector - Adding default target for rubygems content class
+2020-12-01 15:05:42,310+0000 INFO  [jetty-main-1]  org.sonatype.nexus.configuration.application.DefaultNexusConfiguration - Applying Nexus Configuration due to changes in [Repository Target Registry]...
+2020-12-01 15:05:42,596+0000 INFO  [jetty-main-1]  com.sonatype.nexus.plugins.nuget.odata.NugetODataGalleryMigrator - Starting Nuget DB migration.
+2020-12-01 15:05:42,598+0000 INFO  [jetty-main-1]  com.sonatype.nexus.plugins.nuget.odata.NugetODataGalleryMigrator - Starting Nuget DB migration to version 1
+2020-12-01 15:05:42,601+0000 INFO  [jetty-main-1]  com.sonatype.nexus.plugins.nuget.odata.NugetODataGalleryMigrator - Completed Nuget DB migration to version 1
+2020-12-01 15:05:42,601+0000 INFO  [jetty-main-1]  com.sonatype.nexus.plugins.nuget.odata.NugetODataGalleryMigrator - Starting Nuget DB migration to version 2
+2020-12-01 15:05:42,602+0000 INFO  [jetty-main-1]  com.sonatype.nexus.plugins.nuget.odata.NugetODataGalleryMigrator - Completed Nuget DB migration to version 2
+2020-12-01 15:05:42,602+0000 INFO  [jetty-main-1]  com.sonatype.nexus.plugins.nuget.odata.NugetODataGalleryMigrator - Starting Nuget DB migration to version 3
+2020-12-01 15:05:42,603+0000 INFO  [jetty-main-1]  com.sonatype.nexus.plugins.nuget.odata.NugetODataGalleryMigrator - Completed Nuget DB migration to version 3
+2020-12-01 15:05:42,603+0000 INFO  [jetty-main-1]  com.sonatype.nexus.plugins.nuget.odata.NugetODataGalleryMigrator - Starting Nuget DB migration to version 4
+2020-12-01 15:05:42,605+0000 INFO  [jetty-main-1]  com.sonatype.nexus.plugins.nuget.odata.NugetODataGalleryMigrator - Completed Nuget DB migration to version 4
+2020-12-01 15:05:42,605+0000 INFO  [jetty-main-1]  com.sonatype.nexus.plugins.nuget.odata.NugetODataGalleryMigrator - Starting Nuget DB migration to version 5
+2020-12-01 15:05:42,607+0000 INFO  [jetty-main-1]  com.sonatype.nexus.plugins.nuget.odata.NugetODataGalleryMigrator - Completed Nuget DB migration to version 5
+2020-12-01 15:05:42,607+0000 INFO  [jetty-main-1]  com.sonatype.nexus.plugins.nuget.odata.NugetODataGalleryMigrator - Starting Nuget DB migration to version 6
+2020-12-01 15:05:42,609+0000 INFO  [jetty-main-1]  com.sonatype.nexus.plugins.nuget.odata.NugetODataGalleryMigrator - Completed Nuget DB migration to version 6
+2020-12-01 15:05:42,609+0000 INFO  [jetty-main-1]  com.sonatype.nexus.plugins.nuget.odata.NugetODataGalleryMigrator - Starting Nuget DB migration to version 7
+2020-12-01 15:05:42,610+0000 INFO  [jetty-main-1]  com.sonatype.nexus.plugins.nuget.odata.NugetODataGalleryMigrator - Completed Nuget DB migration to version 7
+2020-12-01 15:05:42,610+0000 INFO  [jetty-main-1]  com.sonatype.nexus.plugins.nuget.odata.NugetODataGalleryMigrator - Starting Nuget DB migration to version 8
+2020-12-01 15:05:42,611+0000 INFO  [jetty-main-1]  com.sonatype.nexus.plugins.nuget.odata.NugetODataGalleryMigrator - Completed Nuget DB migration to version 8
+2020-12-01 15:05:42,611+0000 INFO  [jetty-main-1]  com.sonatype.nexus.plugins.nuget.odata.NugetODataGalleryMigrator - Starting Nuget DB migration to version 9
+2020-12-01 15:05:42,611+0000 INFO  [jetty-main-1]  com.sonatype.nexus.plugins.nuget.odata.NugetODataGalleryMigrator - Completed Nuget DB migration to version 9
+2020-12-01 15:05:42,611+0000 INFO  [jetty-main-1]  com.sonatype.nexus.plugins.nuget.odata.NugetODataGalleryMigrator - Completed Nuget DB migration.
+2020-12-01 15:05:42,665+0000 INFO  [jetty-main-1]  org.sonatype.nexus.webapp.WebappBootstrap - Initialized
+2020-12-01 15:05:42,717+0000 INFO  [ar-7-thread-2] *TASK org.sonatype.nexus.proxy.maven.routing.internal.ManagerImpl - Updated and published prefix file of "Snapshots" [id=snapshots]
+2020-12-01 15:05:42,718+0000 INFO  [ar-7-thread-4] *TASK org.sonatype.nexus.proxy.maven.routing.internal.ManagerImpl - Updated and published prefix file of "Releases" [id=releases]
+2020-12-01 15:05:42,717+0000 INFO  [ar-7-thread-1] *TASK org.sonatype.nexus.proxy.maven.routing.internal.ManagerImpl - Updated and published prefix file of "3rd party" [id=thirdparty]
+2020-12-01 15:05:42,793+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule - Resources:
+2020-12-01 15:05:42,794+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/analytics/events
+2020-12-01 15:05:42,794+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/analytics/settings
+2020-12-01 15:05:42,794+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/atlas/security-diagnostic
+2020-12-01 15:05:42,794+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/atlas/support-zip
+2020-12-01 15:05:42,794+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/atlas/system-information
+2020-12-01 15:05:42,794+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/capabilities
+2020-12-01 15:05:42,794+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/capabilities/stores
+2020-12-01 15:05:42,794+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/capabilities/types
+2020-12-01 15:05:42,794+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/clm
+2020-12-01 15:05:42,794+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/clm/applications
+2020-12-01 15:05:42,794+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/clm/firewall
+2020-12-01 15:05:42,794+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/healthcheck/gaDetails
+2020-12-01 15:05:42,794+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/healthcheck/gavDetails
+2020-12-01 15:05:42,794+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/healthcheck/healthCheckEula
+2020-12-01 15:05:42,794+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/healthcheck/healthCheckInfo
+2020-12-01 15:05:42,794+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/healthcheck/healthCheckStatus
+2020-12-01 15:05:42,794+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/healthcheck/healthCheckSummary/{repositoryId}/{path:.*}
+2020-12-01 15:05:42,794+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/logging/log
+2020-12-01 15:05:42,795+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/logging/loggers
+2020-12-01 15:05:42,795+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/migrationagent/configuration
+2020-12-01 15:05:42,795+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/migrationagent/repository
+2020-12-01 15:05:42,795+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/migrationagent/repository-changelog
+2020-12-01 15:05:42,795+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/migrationagent/repository-content
+2020-12-01 15:05:42,795+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/migrationagent/repository-migration
+2020-12-01 15:05:42,795+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/migrationagent/status
+2020-12-01 15:05:42,795+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/wonderland/authenticate
+2020-12-01 15:05:42,795+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/wonderland/download
+2020-12-01 15:05:42,795+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/wonderland/settings
+2020-12-01 15:05:42,795+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule - Components:
+2020-12-01 15:05:42,795+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.nexus.plugins.capabilities.internal.rest.CapabilityNotFoundExceptionMapper
+2020-12-01 15:05:42,795+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.nexus.plugins.siesta.AuthorizationExceptionMapper
+2020-12-01 15:05:42,795+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.nexus.plugins.siesta.ErrorStatusRuntimeExceptionMapper
+2020-12-01 15:05:42,795+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.nexus.plugins.siesta.InvalidConfigurationExceptionMapper
+2020-12-01 15:05:42,795+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.nexus.plugins.siesta.NoSuchRepositoryExceptionMapper
+2020-12-01 15:05:42,795+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.sisu.siesta.jackson.JacksonProvider
+2020-12-01 15:05:42,795+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.sisu.siesta.server.internal.mappers.BadRequestExceptionMapper
+2020-12-01 15:05:42,795+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.sisu.siesta.server.internal.mappers.ConstraintViolationExceptionMapper
+2020-12-01 15:05:42,795+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.sisu.siesta.server.internal.mappers.InvalidObjectExceptionMapper
+2020-12-01 15:05:42,795+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.sisu.siesta.server.internal.mappers.ObjectNotFoundExceptionMapper
+2020-12-01 15:05:42,796+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.sisu.siesta.server.internal.mappers.ThrowableExceptionMapper
+2020-12-01 15:05:42,796+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.sisu.siesta.server.internal.mappers.ValidationErrorsExceptionMapper
+2020-12-01 15:05:42,796+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.sisu.siesta.server.internal.mappers.WebApplicationExceptionMapper
+2020-12-01 15:05:42,796+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.sisu.siesta.server.internal.mappers.WebApplicationMessageExceptionMapper
+2020-12-01 15:05:42,973+0000 INFO  [jetty-main-1]  org.sonatype.nexus.rest.NexusApplication_UriMatching - Strict URI matching: true
+2020-12-01 15:05:43,028+0000 INFO  [jetty-main-1]  org.sonatype.nexus.configuration.ModelUtils - Loading model /sonatype-work/conf/lvo-plugin.xml
+2020-12-01 15:05:43,039+0000 INFO  [jetty-main-1]  org.sonatype.nexus.configuration.ModelUtils - Loading model /sonatype-work/conf/ldap.xml
+2020-12-01 15:05:43,310+0000 INFO  [ar-7-thread-5] *TASK org.sonatype.nexus.proxy.storage.remote.httpclient.HttpClientRemoteStorage - Initializing remote transport for proxy repository "Apache Snapshots" [id=apache-snapshots]...
+2020-12-01 15:05:43,396+0000 INFO  [jetty-main-1]  org.sonatype.nexus.webresources.internal.WebResourceServiceImpl - Discovered 1978 resources
+2020-12-01 15:05:43,397+0000 INFO  [jetty-main-1]  org.sonatype.nexus.webresources.internal.WebResourceServlet - Max-age: 30 days (2592000 seconds)
+2020-12-01 15:05:43,413+0000 INFO  [jetty-main-1]  org.sonatype.nexus.bootstrap.jetty.InstrumentedSelectChannelConnector - Metrics enabled
+2020-12-01 15:05:43,423+0000 INFO  [jetty-main-1]  org.eclipse.jetty.server.AbstractConnector - Started InstrumentedSelectChannelConnector@0.0.0.0:8081
+2020-12-01 15:05:43,423+0000 INFO  [jetty-main-1]  org.sonatype.nexus.bootstrap.jetty.JettyServer - Running
+2020-12-01 15:05:43,423+0000 INFO  [main] *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Started
+2020-12-01 15:05:43,442+0000 INFO  [ar-7-thread-3] *TASK org.sonatype.nexus.proxy.storage.remote.httpclient.HttpClientRemoteStorage - Initializing remote transport for proxy repository "Central" [id=central]...
+2020-12-01 15:05:43,916+0000 INFO  [ar-7-thread-3] *TASK org.sonatype.nexus.proxy.maven.routing.internal.ManagerImpl - Updated and published prefix file of "Public Repositories" [id=public]
+2020-12-01 15:10:58,193+0000 INFO  [qtp2025864991-56]  org.apache.shiro.nexus5727.FixedDefaultWebSessionManager - Global session timeout: 1800000 ms
+2020-12-01 15:10:58,194+0000 INFO  [qtp2025864991-56]  org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Enabling session validation scheduler...
+2020-12-01 15:10:58,199+0000 INFO  [qtp2025864991-56]  org.apache.shiro.cache.ehcache.EhCacheManager - Using existing EHCache named [shiro-activeSessionCache]
+2020-12-01 15:10:58,216+0000 INFO  [qtp2025864991-56] *UNKNOWN org.sonatype.nexus.velocity.VelocityEngineProvider - Creating Nexus VelocityEngine
+2020-12-01 15:10:58,572+0000 WARN  [qtp2025864991-55] *UNKNOWN org.sonatype.security.model.source.FileModelConfigurationSource - No configuration file in place, copying the default one and continuing with it.
+2020-12-01 15:10:58,572+0000 INFO  [qtp2025864991-56] *UNKNOWN /nexus - nexus: [Noelios Restlet Engine] - Attaching application: org.sonatype.nexus.rest.NexusApplication@3591792 to URI: /nexus/service/local
+2020-12-01 15:10:58,574+0000 INFO  [qtp2025864991-55] *UNKNOWN org.sonatype.security.model.source.FileModelConfigurationSource - Loading security configuration from: /sonatype-work/conf/security.xml
+2020-12-01 15:10:58,887+0000 INFO  [qtp2025864991-63] anonymous java.util.prefs - Created user preferences directory.
+2020-12-01 15:11:21,538+0000 INFO  [SIGTERM handler]  com.orientechnologies.orient.core.OSignalHandler - Received signal: SIGTERM
+2020-12-01 15:11:21,539+0000 INFO  [Thread-2]  org.eclipse.jetty.server.Server - Graceful shutdown InstrumentedSelectChannelConnector@0.0.0.0:8081
+2020-12-01 15:11:21,541+0000 INFO  [Thread-2]  org.eclipse.jetty.server.Server - Graceful shutdown o.e.j.w.WebAppContext{/nexus,file:/opt/sonatype/nexus/nexus/},/opt/sonatype/nexus/nexus
+2020-12-01 15:11:22,586+0000 INFO  [Thread-2]  org.sonatype.nexus.webapp.WebappBootstrap - Destroying
+2020-12-01 15:11:22,595+0000 INFO  [Thread-2]  org.sonatype.nexus.NxApplication - Uptime: 5 minutes, 49 seconds and 287 milliseconds
+2020-12-01 15:11:22,597+0000 INFO  [Thread-2]  org.sonatype.scheduling.DefaultScheduler - Shutting down Scheduler...
+2020-12-01 15:11:22,601+0000 INFO  [Thread-2]  org.sonatype.nexus.index.DefaultIndexerManager - Shutting down Nexus IndexerManager
+2020-12-01 15:11:22,608+0000 INFO  [Thread-2]  org.sonatype.nexus.apachehttpclient.Hc4ProviderImpl - Stopped
+2020-12-01 15:11:22,662+0000 INFO  [Thread-2]  org.sonatype.nexus.timeline.DefaultNexusTimeline - Stopping Nexus Timeline...
+2020-12-01 15:11:22,663+0000 INFO  [Thread-2]  org.sonatype.timeline.internal.DefaultTimeline - Stopped Timeline...
+2020-12-01 15:11:22,663+0000 INFO  [Thread-2]  org.sonatype.nexus.events.EventSubscriberHost - Stopping
+2020-12-01 15:11:22,666+0000 INFO  [Thread-2]  org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Disabled session validation scheduler.
+2020-12-01 15:11:22,667+0000 INFO  [Thread-2]  org.sonatype.nexus.orient.DatabaseServerImpl - Shutdown
+2020-12-01 15:11:22,667+0000 INFO  [Thread-2]  org.sonatype.nexus.NxApplication - Stopped Nexus Repository Manager OSS 2.14.19-01
+2020-12-01 15:11:22,676+0000 INFO  [Thread-2]  org.sonatype.nexus.webapp.WebappBootstrap - Destroyed
+2020-12-01 15:11:22,677+0000 INFO  [Thread-2]  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.w.WebAppContext{/nexus,file:/opt/sonatype/nexus/nexus/},/opt/sonatype/nexus/nexus
+2020-12-01 15:15:25,616+0000 INFO  [jetty-main-1]  org.sonatype.nexus.events.EventSubscriberHost - Initialized
+2020-12-01 15:15:25,618+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - 
+-------------------------------------------------
+
+Initializing Nexus Repository Manager OSS 2.14.19-01
+
+-------------------------------------------------
+2020-12-01 15:15:25,619+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Activating locally installed plugins...
+2020-12-01 15:15:27,338+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.bcprov.CryptoPlugin - Unlimited strength JCE policy detected
+2020-12-01 15:15:27,967+0000 INFO  [jetty-main-1]  com.sun.jersey.server.impl.application.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+2020-12-01 15:15:28,646+0000 INFO  [jetty-main-1]  org.sonatype.nexus.kazuki.KazukiPlugin - Kazuki version: 0.1.8
+2020-12-01 15:15:29,396+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryTypeRegistry - Registered Repository type RepositoryType=(org.sonatype.nexus.proxy.repository.GroupRepository:npm-group).
+2020-12-01 15:15:29,397+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryTypeRegistry - Registered Repository type RepositoryType=(org.sonatype.nexus.proxy.repository.Repository:npm-proxy).
+2020-12-01 15:15:29,397+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryTypeRegistry - Registered Repository type RepositoryType=(org.sonatype.nexus.proxy.repository.Repository:npm-hosted).
+2020-12-01 15:15:29,475+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryTypeRegistry - Registered Repository type RepositoryType=(org.sonatype.nexus.proxy.repository.GroupRepository:nuget-group).
+2020-12-01 15:15:29,476+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryTypeRegistry - Registered Repository type RepositoryType=(org.sonatype.nexus.proxy.repository.Repository:nuget-proxy).
+2020-12-01 15:15:29,476+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryTypeRegistry - Registered Repository type RepositoryType=(org.sonatype.nexus.proxy.repository.ShadowRepository:nuget-shadow).
+2020-12-01 15:15:30,029+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryTypeRegistry - Registered Repository type RepositoryType=(org.sonatype.nexus.proxy.repository.GroupRepository:rubygems-group).
+2020-12-01 15:15:30,029+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryTypeRegistry - Registered Repository type RepositoryType=(org.sonatype.nexus.proxy.repository.Repository:rubygems-proxy).
+2020-12-01 15:15:30,029+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryTypeRegistry - Registered Repository type RepositoryType=(org.sonatype.nexus.proxy.repository.Repository:rubygems-hosted).
+2020-12-01 15:15:30,685+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryTypeRegistry - Registered Repository type RepositoryType=(org.sonatype.nexus.proxy.repository.WebSiteRepository:site).
+2020-12-01 15:15:30,920+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-archetype-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,920+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-plugin-console-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,920+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-indexer-lucene-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,920+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-maven-bridge-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,920+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-atlas-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,920+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-kazuki-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,920+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "com.sonatype.nexus.plugins:nexus-outreach-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,920+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-groovy-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,920+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "com.sonatype.nexus.plugins:nexus-migrationagent-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,920+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-rrb-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,920+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-content-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,921+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-orient-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,921+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-h2-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,921+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-capabilities-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,921+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-crypto-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,921+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-rutauth-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,921+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-site-repository-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,921+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "com.sonatype.nexus.plugins:nexus-nuget-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,921+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-logging-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,921+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-ldap-realm-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,921+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-timeline-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,921+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-lvo-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,921+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-npm-repository-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,921+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "com.sonatype.nexus.plugins:nexus-iq-repository-oss-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,921+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-wonderland-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,921+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-restlet1x-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,921+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-webresources-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,921+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-ruby-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,921+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-siesta-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,921+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "com.sonatype.nexus.plugins:nexus-analytics-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,921+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-yum-repository-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,921+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Plugin manager request "ACTIVATE" on plugin "org.sonatype.nexus.plugins:nexus-ui-extjs3-plugin:2.14.19-01" was successful.
+2020-12-01 15:15:30,922+0000 INFO  [jetty-main-1]  org.sonatype.nexus.events.EventSubscriberHost - Starting
+2020-12-01 15:15:30,945+0000 INFO  [jetty-main-1]  org.sonatype.nexus.timeline.DefaultNexusTimeline - Initializing Nexus Timeline...
+2020-12-01 15:15:30,946+0000 INFO  [jetty-main-1]  org.sonatype.nexus.timeline.DefaultNexusTimeline - Starting Nexus Timeline...
+2020-12-01 15:15:31,052+0000 INFO  [jetty-main-1]  org.sonatype.timeline.internal.DefaultTimeline - Started Timeline...
+2020-12-01 15:15:31,257+0000 INFO  [jetty-main-1]  org.sonatype.nexus.apachehttpclient.Hc4ProviderImpl - Started (connectionPoolMaxSize 200, connectionPoolSize 20, connectionPoolIdleTime 30000 ms, connectionPoolTimeout 30000 ms, keepAliveMaxDuration 30000 ms)
+2020-12-01 15:15:31,609+0000 INFO  [jetty-main-1]  org.sonatype.nexus.orient.DatabaseServerImpl - OrientDB version: 2.1.14
+2020-12-01 15:15:31,617+0000 INFO  [jetty-main-1]  com.orientechnologies.orient.server.OServer - OrientDB Server v2.1.14 is starting up...
+2020-12-01 15:15:31,620+0000 INFO  [jetty-main-1]  com.orientechnologies.orient.server.OServer - Databases directory: /sonatype-work/db
+2020-12-01 15:15:31,625+0000 INFO  [jetty-main-1]  com.orientechnologies.orient.server.handler.OJMXPlugin - JMX plugin installed and active: profilerManaged=true
+2020-12-01 15:15:31,626+0000 INFO  [jetty-main-1]  com.orientechnologies.orient.server.OServer - OrientDB Server v2.1.14 is active.
+2020-12-01 15:15:31,626+0000 INFO  [jetty-main-1]  org.sonatype.nexus.orient.DatabaseServerImpl - Activated
+2020-12-01 15:15:31,626+0000 INFO  [jetty-main-1]  org.sonatype.nexus.configuration.application.DefaultNexusConfiguration - Loading Nexus Configuration...
+2020-12-01 15:15:31,634+0000 INFO  [jetty-main-1]  org.sonatype.nexus.configuration.source.StaticConfigurationSource - Configuration loaded successfully.
+2020-12-01 15:15:31,636+0000 INFO  [jetty-main-1]  org.sonatype.nexus.configuration.source.FileConfigurationSource - Configuration loaded successfully.
+2020-12-01 15:15:31,696+0000 INFO  [jetty-main-1]  org.sonatype.nexus.configuration.source.FileConfigurationSource - Nexus configuration validated successfully.
+2020-12-01 15:15:31,714+0000 INFO  [jetty-main-1]  org.sonatype.nexus.configuration.application.DefaultNexusConfiguration - Applying Nexus Configuration...
+2020-12-01 15:15:31,717+0000 INFO  [jetty-main-1]  org.sonatype.security.configuration.source.FileSecurityConfigurationSource - Loading Security configuration from /sonatype-work/conf/security-configuration.xml
+2020-12-01 15:15:31,720+0000 INFO  [jetty-main-1]  org.apache.shiro.cache.ehcache.EhCacheManager - Cache with name 'XmlAuthenticatingRealm.authorizationCache' does not yet exist.  Creating now.
+2020-12-01 15:15:31,721+0000 INFO  [jetty-main-1]  org.apache.shiro.cache.ehcache.EhCacheManager - Added EhCache named [XmlAuthenticatingRealm.authorizationCache]
+2020-12-01 15:15:31,722+0000 INFO  [jetty-main-1]  org.apache.shiro.cache.ehcache.EhCacheManager - Cache with name 'XmlAuthorizingRealm.authorizationCache' does not yet exist.  Creating now.
+2020-12-01 15:15:31,722+0000 INFO  [jetty-main-1]  org.apache.shiro.cache.ehcache.EhCacheManager - Added EhCache named [XmlAuthorizingRealm.authorizationCache]
+2020-12-01 15:15:31,737+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.attributes.DefaultLSAttributeStorage - Default FS AttributeStorage in place, using JacksonJSON marshaller. 
+2020-12-01 15:15:31,916+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository "Central" [id=central][contentClass=Maven2][mainFacet=org.sonatype.nexus.proxy.maven.MavenProxyRepository]
+2020-12-01 15:15:31,948+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository "Apache Snapshots" [id=apache-snapshots][contentClass=Maven2][mainFacet=org.sonatype.nexus.proxy.maven.MavenProxyRepository]
+2020-12-01 15:15:31,973+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository "Releases" [id=releases][contentClass=Maven2][mainFacet=org.sonatype.nexus.proxy.maven.MavenHostedRepository]
+2020-12-01 15:15:31,996+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository "Snapshots" [id=snapshots][contentClass=Maven2][mainFacet=org.sonatype.nexus.proxy.maven.MavenHostedRepository]
+2020-12-01 15:15:32,019+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository "3rd party" [id=thirdparty][contentClass=Maven2][mainFacet=org.sonatype.nexus.proxy.maven.MavenHostedRepository]
+2020-12-01 15:15:32,033+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository "Central M1 shadow" [id=central-m1][contentClass=Maven1][mainFacet=org.sonatype.nexus.proxy.maven.MavenShadowRepository]
+2020-12-01 15:15:32,064+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository "snapshot" [id=snapshot][contentClass=Maven2][mainFacet=org.sonatype.nexus.proxy.maven.MavenProxyRepository]
+2020-12-01 15:15:32,099+0000 INFO  [jetty-main-1]  org.sonatype.nexus.proxy.registry.DefaultRepositoryRegistry - Added repository "Public Repositories" [id=public][contentClass=Maven2][mainFacet=org.sonatype.nexus.proxy.repository.GroupRepository]
+2020-12-01 15:15:32,100+0000 INFO  [jetty-main-1]  org.sonatype.scheduling.DefaultScheduler - Initializing Scheduler...
+2020-12-01 15:15:32,100+0000 INFO  [jetty-main-1]  org.sonatype.nexus.scheduling.internal.DefaultTaskConfigManager - 0 task(s) to load.
+2020-12-01 15:15:32,100+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Nexus Work Directory : /sonatype-work
+2020-12-01 15:15:32,100+0000 INFO  [jetty-main-1]  org.sonatype.nexus.NxApplication - Started Nexus Repository Manager OSS 2.14.19-01
+2020-12-01 15:15:32,489+0000 INFO  [jetty-main-1]  com.sonatype.nexus.plugins.nuget.odata.NugetODataGalleryMigrator - Starting Nuget DB migration.
+2020-12-01 15:15:32,493+0000 INFO  [jetty-main-1]  com.sonatype.nexus.plugins.nuget.odata.NugetODataGalleryMigrator - Completed Nuget DB migration.
+2020-12-01 15:15:32,587+0000 INFO  [jetty-main-1]  org.sonatype.nexus.webapp.WebappBootstrap - Initialized
+2020-12-01 15:15:32,664+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule - Resources:
+2020-12-01 15:15:32,665+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/analytics/events
+2020-12-01 15:15:32,665+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/analytics/settings
+2020-12-01 15:15:32,665+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/atlas/security-diagnostic
+2020-12-01 15:15:32,665+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/atlas/support-zip
+2020-12-01 15:15:32,665+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/atlas/system-information
+2020-12-01 15:15:32,665+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/capabilities
+2020-12-01 15:15:32,665+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/capabilities/stores
+2020-12-01 15:15:32,665+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/capabilities/types
+2020-12-01 15:15:32,665+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/clm
+2020-12-01 15:15:32,665+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/clm/applications
+2020-12-01 15:15:32,665+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/clm/firewall
+2020-12-01 15:15:32,665+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/healthcheck/gaDetails
+2020-12-01 15:15:32,665+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/healthcheck/gavDetails
+2020-12-01 15:15:32,665+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/healthcheck/healthCheckEula
+2020-12-01 15:15:32,665+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/healthcheck/healthCheckInfo
+2020-12-01 15:15:32,665+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/healthcheck/healthCheckStatus
+2020-12-01 15:15:32,665+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/healthcheck/healthCheckSummary/{repositoryId}/{path:.*}
+2020-12-01 15:15:32,666+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/logging/log
+2020-12-01 15:15:32,666+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/logging/loggers
+2020-12-01 15:15:32,666+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/migrationagent/configuration
+2020-12-01 15:15:32,666+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/migrationagent/repository
+2020-12-01 15:15:32,666+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/migrationagent/repository-changelog
+2020-12-01 15:15:32,666+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/migrationagent/repository-content
+2020-12-01 15:15:32,666+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/migrationagent/repository-migration
+2020-12-01 15:15:32,666+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/migrationagent/status
+2020-12-01 15:15:32,666+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/wonderland/authenticate
+2020-12-01 15:15:32,666+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/wonderland/download
+2020-12-01 15:15:32,666+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   /service/siesta/wonderland/settings
+2020-12-01 15:15:32,666+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule - Components:
+2020-12-01 15:15:32,666+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.nexus.plugins.capabilities.internal.rest.CapabilityNotFoundExceptionMapper
+2020-12-01 15:15:32,666+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.nexus.plugins.siesta.AuthorizationExceptionMapper
+2020-12-01 15:15:32,666+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.nexus.plugins.siesta.ErrorStatusRuntimeExceptionMapper
+2020-12-01 15:15:32,666+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.nexus.plugins.siesta.InvalidConfigurationExceptionMapper
+2020-12-01 15:15:32,666+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.nexus.plugins.siesta.NoSuchRepositoryExceptionMapper
+2020-12-01 15:15:32,666+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.sisu.siesta.jackson.JacksonProvider
+2020-12-01 15:15:32,667+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.sisu.siesta.server.internal.mappers.BadRequestExceptionMapper
+2020-12-01 15:15:32,667+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.sisu.siesta.server.internal.mappers.ConstraintViolationExceptionMapper
+2020-12-01 15:15:32,667+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.sisu.siesta.server.internal.mappers.InvalidObjectExceptionMapper
+2020-12-01 15:15:32,667+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.sisu.siesta.server.internal.mappers.ObjectNotFoundExceptionMapper
+2020-12-01 15:15:32,667+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.sisu.siesta.server.internal.mappers.ThrowableExceptionMapper
+2020-12-01 15:15:32,667+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.sisu.siesta.server.internal.mappers.ValidationErrorsExceptionMapper
+2020-12-01 15:15:32,667+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.sisu.siesta.server.internal.mappers.WebApplicationExceptionMapper
+2020-12-01 15:15:32,667+0000 INFO  [jetty-main-1]  org.sonatype.nexus.plugins.siesta.SiestaModule -   org.sonatype.sisu.siesta.server.internal.mappers.WebApplicationMessageExceptionMapper
+2020-12-01 15:15:32,845+0000 INFO  [jetty-main-1]  org.sonatype.nexus.rest.NexusApplication_UriMatching - Strict URI matching: true
+2020-12-01 15:15:32,883+0000 INFO  [jetty-main-1]  org.sonatype.nexus.configuration.ModelUtils - Loading model /sonatype-work/conf/lvo-plugin.xml
+2020-12-01 15:15:32,891+0000 INFO  [jetty-main-1]  org.sonatype.nexus.configuration.ModelUtils - Loading model /sonatype-work/conf/ldap.xml
+2020-12-01 15:15:33,233+0000 INFO  [jetty-main-1]  org.sonatype.nexus.webresources.internal.WebResourceServiceImpl - Discovered 1978 resources
+2020-12-01 15:15:33,233+0000 INFO  [jetty-main-1]  org.sonatype.nexus.webresources.internal.WebResourceServlet - Max-age: 30 days (2592000 seconds)
+2020-12-01 15:15:33,247+0000 INFO  [jetty-main-1]  org.sonatype.nexus.bootstrap.jetty.InstrumentedSelectChannelConnector - Metrics enabled
+2020-12-01 15:15:33,255+0000 INFO  [jetty-main-1]  org.eclipse.jetty.server.AbstractConnector - Started InstrumentedSelectChannelConnector@0.0.0.0:8081
+2020-12-01 15:15:33,255+0000 INFO  [jetty-main-1]  org.sonatype.nexus.bootstrap.jetty.JettyServer - Running
+2020-12-01 15:15:33,255+0000 INFO  [main] *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer - Started
+2020-12-01 15:15:33,824+0000 INFO  [ar-7-thread-2] *TASK org.sonatype.nexus.proxy.storage.remote.httpclient.HttpClientRemoteStorage - Initializing remote transport for proxy repository "snapshot" [id=snapshot]...
+2020-12-01 15:15:34,258+0000 INFO  [qtp2025864991-51]  org.apache.shiro.nexus5727.FixedDefaultWebSessionManager - Global session timeout: 1800000 ms
+2020-12-01 15:15:34,259+0000 INFO  [qtp2025864991-51]  org.apache.shiro.session.mgt.AbstractValidatingSessionManager - Enabling session validation scheduler...
+2020-12-01 15:15:34,267+0000 INFO  [qtp2025864991-51]  org.apache.shiro.cache.ehcache.EhCacheManager - Using existing EHCache named [shiro-activeSessionCache]
+2020-12-01 15:15:34,288+0000 INFO  [qtp2025864991-51] *UNKNOWN org.sonatype.nexus.velocity.VelocityEngineProvider - Creating Nexus VelocityEngine
+2020-12-01 15:15:34,639+0000 INFO  [qtp2025864991-51] *UNKNOWN org.sonatype.security.model.source.FileModelConfigurationSource - Loading security configuration from: /sonatype-work/conf/security.xml
+2020-12-01 15:15:34,643+0000 INFO  [qtp2025864991-50] *UNKNOWN /nexus - nexus: [Noelios Restlet Engine] - Attaching application: org.sonatype.nexus.rest.NexusApplication@56be5689 to URI: /nexus/service/local
+2020-12-01 15:15:34,677+0000 INFO  [ar-7-thread-2] *TASK org.sonatype.nexus.proxy.maven.routing.internal.RemoteScrapeStrategy - Not possible remote scrape of M2Repository(id=snapshot), no scraper succeeded.
+2020-12-01 15:15:35,028+0000 INFO  [proxy-3-thread-1] anonymous org.sonatype.nexus.proxy.storage.remote.httpclient.HttpClientRemoteStorage - Initializing remote transport for proxy repository "Central" [id=central]...
+2020-12-01 15:15:35,029+0000 INFO  [proxy-3-thread-2] anonymous org.sonatype.nexus.proxy.storage.remote.httpclient.HttpClientRemoteStorage - Initializing remote transport for proxy repository "Apache Snapshots" [id=apache-snapshots]...

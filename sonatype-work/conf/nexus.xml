@@ -201,7 +201,7 @@
         </memberRepositories>
       </externalConfiguration>
     </repository>
-    <repository>
+<repository>
       <id>snapshot</id>
       <name>snapshot</name>
       <providerRole>org.sonatype.nexus.proxy.repository.Repository</providerRole>
@@ -339,7 +339,7 @@
     <hostname>smtp-host</hostname>
     <port>25</port>
     <username>smtp-username</username>
-    <password>{AySiECVshNIHIWyJBd1joF1+U6aUbyDNueu1FhEvW6Q=}</password>
+    <password>{BRDjnw9tUfIHUzga5rGrVEMjQv0AFg3yKj/LEArMm70=}</password>
     <systemEmailAddress>system@nexus.org</systemEmailAddress>
   </smtpConfiguration>
   <notification />
