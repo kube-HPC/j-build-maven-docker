@@ -1,1 +1,0 @@
-127.0.0.1 -  -  [30/Nov/2020:16:12:35 +0000] "GET /restServices/archivaServices/pingService/ping HTTP/1.1" 200 19 "-" "curl/7.64.0"
