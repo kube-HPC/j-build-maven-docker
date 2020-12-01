@@ -1,7 +1,3 @@
-from xetusoss/archiva
-USER archiva
-COPY ./archiva-data/ /archiva-data2/
-USER root
-RUN chown -R archiva:archiva /archiva-data2
-ENV ARCHIVA_BASE /archiva-data2
-USER archiva
+from sonatype/nexus
+USER nexus:nexus
+COPY  --chown=nexus:nexus  ./sonatype-work/ /sonatype-work/
