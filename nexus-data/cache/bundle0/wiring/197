@@ -1,0 +1,2 @@
+osgi.wiring.package; (osgi.wiring.package=com.sun.activation.registries)
+203; version=1.2.1
