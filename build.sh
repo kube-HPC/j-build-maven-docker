@@ -7,8 +7,9 @@ sleep 40
 export javaWrapperVersion='2.0-SNAPSHOT'
 envsubst < ${SCRIPTPATH}/m2-project/pomTemplate.xml >  ${SCRIPTPATH}/m2-project/pom.xml
 docker  run --network="host" --rm  -v $SCRIPTPATH/m2-project:/m2-project -w /m2-project maven mvn --settings /m2-project/settings.xml package  
+docker  run --network="host" --rm  -v $SCRIPTPATH/m2-project:/m2-project -w /m2-project maven mvn dependency:get --settings /m2-project/settings.xml  -Dartifact=io.hkube:wrapper:${javaWrapperVersion}:jar:wide 
 sudo rm -r -f ${SCRIPTPATH}/sonatype-work/.java
 export VERSION=v${npm_package_version}
-docker build -f ./Dockerfile -t hkube/maven-registry:${VERSION} .
-docker push  hkube/maven-registry:${VERSION}
+docker build -f ./Dockerfile -t hkube/artifacts-registry:${VERSION} .
+docker push  hkube/artifacts-registry:${VERSION}
 

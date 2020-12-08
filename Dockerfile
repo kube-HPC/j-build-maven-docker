@@ -1,3 +1,3 @@
-from sonatype/nexus
+from sonatype/nexus3
 USER nexus:nexus
-COPY  --chown=nexus:nexus  ./sonatype-work/ /sonatype-work/
+COPY  --chown=nexus:nexus  ./nexus-data/ /nexus-data/
