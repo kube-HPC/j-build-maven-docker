@@ -148,13 +148,13 @@ under the License.
      | this mirror serves has an ID that matches the mirrorOf element of this mirror. IDs are used
      | for inheritance and direct lookup purposes, and must be unique across the set of mirrors.
      |-->
-    <mirror>
+ <mirror>
       <id>mirrorId</id>
       <mirrorOf>central</mirrorOf>
       <name>local</name>
       <url>http://localhost:8081/repository/maven-central/</url>
     </mirror>
-        <mirror>
+    <mirror>
       <id>snapshots</id>
       <mirrorOf>snapshots</mirrorOf>
       <name>snapshots</name>
@@ -184,7 +184,7 @@ under the License.
    |       variables for plugins in the POM.
    |
    |-->
-  <profiles>
+
     <!-- profile
      | Specifies a set of introductions to the build process, to be activated using one or more of the
      | mechanisms described above. For inheritance purposes, and to activate profiles via <activatedProfiles/>
@@ -196,24 +196,52 @@ under the License.
      | to accomplish, particularly when you only have a list of profile id's for debug.
      |
      | This profile example uses the JDK version to trigger activation, and provides a JDK-specific repo.
-    <profile>
-      <id>jdk-1.4</id>
+      -->
+ <profiles>
+        <profile>
+            <id>customer</id>
+            <repositories>
+                <repository>
+                    <id>customer</id>
+                    <name>Customer internal repository</name>
+                    <url>${PACKAGES_REGISTRY}</url>
+                    <layout>default</layout>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
 
-      <activation>
-        <jdk>1.4</jdk>
-      </activation>
+                <repository>
+                    <id>snapshots</id>
+                    <name>snapshots</name>
+                    <url>http://localhost:8081/repository/sonatype-snapshot/</url>
+                    <layout>default</layout>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
 
-      <repositories>
-        <repository>
-          <id>jdk14</id>
-          <name>Repository for JDK 1.4 builds</name>
-          <url>http://www.myhost.com/maven/jdk14</url>
-          <layout>default</layout>
-          <snapshotPolicy>always</snapshotPolicy>
-        </repository>
-      </repositories>
-    </profile>
-    -->
+
+                
+            </repositories>
+            
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>customer</id>
+                    <name>Maven Plugin Repository</name>
+                    <url>${PACKAGES_REGISTRY}</url>
+                    <layout>default</layout>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                    <releases>
+                        <updatePolicy>never</updatePolicy>
+                    </releases>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+
+  
 
     <!--
      | Here is another profile, activated by the system property 'target-env' with a value of 'dev',
@@ -250,7 +278,9 @@ under the License.
     </profile>
     -->
   </profiles>
-
+     <activeProfiles>
+        <activeProfile>customer</activeProfile>
+    </activeProfiles>
   <!-- activeProfiles
    | List of profiles that are active for all builds.
    |
