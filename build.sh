@@ -2,6 +2,7 @@
 set -eo pipefail
 SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 docker stop nexus || true && docker rm nexus || true
+chmod -R 777 ${SCRIPTPATH}/nexus-data || true
 docker run -d --rm -p 8081:8081 --name nexus -v ${SCRIPTPATH}/nexus-data/:/nexus-data   sonatype/nexus3
 sleep 40
 export javaWrapperVersion='2.0-SNAPSHOT'
