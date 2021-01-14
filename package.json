@@ -1,6 +1,6 @@
 {
   "name": "maven",
-  "version": "1.3.05",
+  "version": "1.3.06",
   "description": "",
   "main": "index.js",
   "scripts": {
