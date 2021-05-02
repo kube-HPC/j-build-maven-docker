@@ -1,5 +1,6 @@
 #!/bin/bash
-set -eo pipefail
+# set -eo pipefail
+set -x
 SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 NETWORK_NAME=artifacts-registry-network
 docker stop nexus || true && docker rm nexus || true
@@ -8,7 +9,6 @@ docker network create ${NETWORK_NAME}
 cp -r nexus-data-template nexus-data
 docker run -d --network=${NETWORK_NAME} -p 8081:8081 --name nexus -v ${SCRIPTPATH}/../nexus-data/:/nexus-data   sonatype/nexus3
 echo Waiting for nexus to be up
-curl localhost:8081
 bash -c 'while [[ "$(curl -s -o /dev/null -w ''%{http_code}'' localhost:8081)" != "200" ]]; do echo -n .; sleep 5; done; echo ""'
 echo nexus is up. 
 export javaWrapperVersion=${javaWrapperVersion:-'2.0-SNAPSHOT'}
