@@ -1,19 +1,20 @@
 {
-  "name": "maven",
+  "name": "artifacts-registry",
   "version": "2.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "./build.sh"
+    "build": "./dockerfile/build.sh artifacts-registry",
+    "prepare": "./scripts/prepare"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kube-HPC/maven.git"
+    "url": "git+https://github.com/kube-HPC/artifacts-registry.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kube-HPC/maven/issues"
+    "url": "https://github.com/kube-HPC/artifacts-registry/issues"
   },
-  "homepage": "https://github.com/kube-HPC/maven#readme"
+  "homepage": "https://github.com/kube-HPC/artifacts-registry#readme"
 }
