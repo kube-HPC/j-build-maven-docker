@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "./dockerfile/build.sh artifacts-registry",
-    "prepare": "./scripts/prepare"
+    "build": "npm run prepare && ./dockerfile/build.sh artifacts-registry",
+    "prepare": "./scripts/prepare.sh"
   },
   "repository": {
     "type": "git",

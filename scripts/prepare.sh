@@ -14,6 +14,6 @@ export javaWrapperVersion=${javaWrapperVersion:-'2.0-SNAPSHOT'}
 envsubst < ${SCRIPTPATH}/../m2-project/pomTemplate.xml >  ${SCRIPTPATH}/../m2-project/pom.xml
 docker  run --network=${NETWORK_NAME} --rm  -v ${SCRIPTPATH}/../m2-project:/m2-project -w /m2-project maven mvn --settings /m2-project/settings.xml package  
 docker  run --network=${NETWORK_NAME} --rm  -v ${SCRIPTPATH}/../m2-project:/m2-project -w /m2-project maven mvn dependency:get --settings /m2-project/settings.xml  -Dartifact=io.hkube:wrapper:${javaWrapperVersion}:jar:wide 
-sudo rm -r -f ${SCRIPTPATH}/../nexus-data/javaprefs/.java
+rm -r -f ${SCRIPTPATH}/../nexus-data/javaprefs/.java
 
 
