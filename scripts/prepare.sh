@@ -22,7 +22,7 @@ echo nexus is up.
 export revision=`cat java-wrapper-version.txt`
 envsubst < ${SCRIPTPATH}/../m2-project/pomTemplate.xml >  ${SCRIPTPATH}/../m2-project/pom.xml
 docker  run --network=${NETWORK_NAME} --rm  -v ${SCRIPTPATH}/../m2-project:/m2-project -w /m2-project maven mvn --settings /m2-project/settings.xml package  
-docker  run --network=${NETWORK_NAME} --rm  -v ${SCRIPTPATH}/../m2-project/wrapper-download:/wrapper-download -w /wrapper-download maven mvn -Drevision=${revision} --settings /m2-project/settings.xml package
+docker  run --network=${NETWORK_NAME} --rm  -v ${SCRIPTPATH}/../m2-project:/m2-project -w /m2-project/wrapper-download maven mvn -Drevision=${revision} --settings /m2-project/settings.xml package
 rm -r -f ${SCRIPTPATH}/../nexus-data/javaprefs/.java
 
 
