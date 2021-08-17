@@ -42,6 +42,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           updatedFilePath: "core/algorithm-builder/environments/java/wrapper/version.txt"
-          fileContent: " ${{github.event.client_payload.version}}"
+          fileContent: "${{github.event.client_payload.version}}"
           repository: "hkube"
           targetBranch: "master"
