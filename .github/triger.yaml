@@ -1,0 +1,27 @@
+# This is a basic workflow to help you get started with Actions
+
+name: WARPER-VERSION-TRIGGER
+
+# Controls when the action will run.
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  repository_dispatch:
+    types: [trigger]
+jobs:
+  # This workflow contains a single job called "build"
+  test_and_build:
+    if: "equals(github.event.client_payload.action, 'dev-version')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: setup git
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+      - name: wrapper-version
+        run: |
+          git checkout -f -b wrapper-version-branch
+          echo ${{github.event.client_payload.version}} > ${{github.event.client_payload.wrapper}}-wrapper-version.txt
+          git add  ${{github.event.client_payload.wrapper}}-wrapper-version.txt
+          git commit -m "update ${{github.event.client_payload.wrapper}} version"
+          git push origin wrapper-version-branch:main
