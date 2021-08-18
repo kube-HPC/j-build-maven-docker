@@ -35,7 +35,8 @@ jobs:
           PRIVATE_REGISTRY=docker.io/hkube npm run build
         env:
           DOCKER_HUB_PASS: ${{ secrets.DOCKER_PASSWORD }}
-      - name: create pr in hkube
+      - name: create java pr in hkube
+        if: "github.event.client_payload.wrapper == 'java'"
         run: |
           npm install --no-package-lock --no-save @octokit/rest@^18.0.0
           npm run update-file
@@ -43,5 +44,18 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           updatedFilePath: "core/algorithm-builder/environments/java/wrapper/version.txt"
           fileContent: "${{github.event.client_payload.version}}"
+          wrapper: "java"
+          repository: "hkube"
+          targetBranch: "master"
+      - name: create python pr in hkube
+        if: "github.event.client_payload.wrapper == 'python'"
+        run: |
+          npm install --no-package-lock --no-save @octokit/rest@^18.0.0
+          npm run update-file
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          updatedFilePath: "core/algorithm-builder/environments/python/wrapper/requirements.txt"
+          fileContent: "hkube-python-wrapper==${{github.event.client_payload.version}}"
+          wrapper: "python"
           repository: "hkube"
           targetBranch: "master"

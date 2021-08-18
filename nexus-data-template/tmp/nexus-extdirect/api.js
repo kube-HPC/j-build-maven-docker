@@ -145,13 +145,13 @@ NX.direct.api.REMOTING_API = {
         formHandler: false
       },
       {
-        name: 'defaultWorkDirectory',
-        len: 0,
+        name: 'readGroupable',
+        len: 1,
         formHandler: false
       },
       {
-        name: 'readGroupable',
-        len: 1,
+        name: 'defaultWorkDirectory',
+        len: 0,
         formHandler: false
       },
       {
@@ -795,37 +795,7 @@ NX.direct.api.REMOTING_API = {
     ],
     cleanup_CleanupPolicy: [
       {
-        name: 'getApplicableFields',
-        len: 1,
-        formHandler: false
-      },
-      {
-        name: 'usage',
-        len: 1,
-        formHandler: false
-      },
-      {
-        name: 'update',
-        len: 1,
-        formHandler: false
-      },
-      {
-        name: 'create',
-        len: 1,
-        formHandler: false
-      },
-      {
         name: 'readByFormat',
-        len: 1,
-        formHandler: false
-      },
-      {
-        name: 'readAll',
-        len: 0,
-        formHandler: false
-      },
-      {
-        name: 'remove',
         len: 1,
         formHandler: false
       }
@@ -855,21 +825,6 @@ NX.direct.api.REMOTING_API = {
       }
     ],
     ahc_Component: [
-      {
-        name: 'getPredefinedValues',
-        len: 1,
-        formHandler: false
-      },
-      {
-        name: 'analyzeAsset',
-        len: 6,
-        formHandler: false
-      },
-      {
-        name: 'acceptTermsOfService',
-        len: 0,
-        formHandler: false
-      },
       {
         name: 'containsApplication',
         len: 1,
@@ -933,13 +888,6 @@ NX.direct.api.REMOTING_API = {
       {
         name: 'read',
         len: 0,
-        formHandler: false
-      }
-    ],
-    cleanup_CleanupPreview: [
-      {
-        name: 'previewCleanup',
-        len: 1,
         formHandler: false
       }
     ]

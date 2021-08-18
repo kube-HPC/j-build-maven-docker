@@ -1,0 +1,20 @@
+osgi.wiring.package; (osgi.wiring.package=com.sonatype.insight.scan.model)
+288; version=0.0.0
+osgi.wiring.package; (osgi.wiring.package=com.thoughtworks.xstream.io.xml)
+296; version=1.4.15
+osgi.ee; (&(osgi.ee=JavaSE)(version=1.8))
+0; version=[1.0.0, 1.1.0, 1.2.0, 1.3.0, 1.4.0, 1.5.0, 1.6.0, 1.7.0, 1.8.0]
+osgi.wiring.package; (osgi.wiring.package=javax.inject)
+15; version=1.0.0
+osgi.wiring.package; (osgi.wiring.package=com.thoughtworks.xstream.io)
+296; version=1.4.15
+osgi.wiring.package; (osgi.wiring.package=com.thoughtworks.xstream)
+296; version=1.4.15
+osgi.wiring.package; (osgi.wiring.package=com.thoughtworks.xstream.converters.basic)
+296; version=1.4.15
+osgi.wiring.package; (osgi.wiring.package=com.thoughtworks.xstream.security)
+296; version=1.4.15
+osgi.wiring.package; (osgi.wiring.package=org.slf4j)
+34; version=1.7.30
+osgi.wiring.package; (osgi.wiring.package=com.thoughtworks.xstream.converters)
+296; version=1.4.15
