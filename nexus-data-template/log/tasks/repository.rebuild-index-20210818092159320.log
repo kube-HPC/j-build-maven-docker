@@ -1,0 +1,14 @@
+2021-08-18 09:21:59,324+0000 INFO  [quartz-8-thread-1]  *SYSTEM org.sonatype.nexus.repository.search.index.RebuildIndexTask - Task information:
+2021-08-18 09:21:59,330+0000 INFO  [quartz-8-thread-1]  *SYSTEM org.sonatype.nexus.repository.search.index.RebuildIndexTask -  ID: 7ca4d726-c4d1-481c-9d34-1c20553791a8
+2021-08-18 09:21:59,330+0000 INFO  [quartz-8-thread-1]  *SYSTEM org.sonatype.nexus.repository.search.index.RebuildIndexTask -  Type: repository.rebuild-index
+2021-08-18 09:21:59,330+0000 INFO  [quartz-8-thread-1]  *SYSTEM org.sonatype.nexus.repository.search.index.RebuildIndexTask -  Name: Repair - Rebuild repository search
+2021-08-18 09:21:59,330+0000 INFO  [quartz-8-thread-1]  *SYSTEM org.sonatype.nexus.repository.search.index.RebuildIndexTask -  Description: Rebuilding search index of *
+2021-08-18 09:21:59,349+0000 INFO  [quartz-8-thread-1]  *SYSTEM org.sonatype.nexus.repository.search.SearchFacetImpl - Rebuilding index of repository maven-snapshots
+2021-08-18 09:22:00,197+0000 INFO  [quartz-8-thread-1]  *SYSTEM org.sonatype.nexus.repository.search.SearchFacetImpl - Rebuilding index of repository maven-central
+2021-08-18 09:22:02,359+0000 INFO  [quartz-8-thread-1]  *SYSTEM org.sonatype.nexus.repository.search.SearchFacetImpl - Indexed 482 / 482 maven-central components in 1982 ms
+2021-08-18 09:22:02,362+0000 INFO  [quartz-8-thread-1]  *SYSTEM org.sonatype.nexus.repository.search.SearchFacetImpl - Rebuilding index of repository nuget.org-proxy
+2021-08-18 09:22:02,476+0000 INFO  [quartz-8-thread-1]  *SYSTEM org.sonatype.nexus.repository.search.SearchFacetImpl - Rebuilding index of repository maven-releases
+2021-08-18 09:22:02,658+0000 INFO  [quartz-8-thread-1]  *SYSTEM org.sonatype.nexus.repository.search.SearchFacetImpl - Rebuilding index of repository nuget-hosted
+2021-08-18 09:22:02,771+0000 INFO  [quartz-8-thread-1]  *SYSTEM org.sonatype.nexus.repository.search.SearchFacetImpl - Rebuilding index of repository sonatype-snapshot
+2021-08-18 09:22:02,942+0000 INFO  [quartz-8-thread-1]  *SYSTEM org.sonatype.nexus.repository.search.SearchFacetImpl - Indexed 12 / 12 sonatype-snapshot components in 36 ms
+2021-08-18 09:22:02,944+0000 INFO  [quartz-8-thread-1]  *SYSTEM org.sonatype.nexus.repository.search.index.RebuildIndexTask - Task complete

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.msgpack</groupId>
+    <artifactId>jackson-dataformat-msgpack</artifactId>
+    <packaging>jar</packaging>
+    <description>Jackson extension that adds support for MessagePack</description>
+    <version>0.8.20</version>
+    <name>jackson-dataformat-msgpack</name>
+    <organization>
+        <name>MessagePack</name>
+        <url>http://msgpack.org/</url>
+    </organization>
+    <url>http://msgpack.org/</url>
+    <licenses>
+        <license>
+            <name>Apache 2</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+    <scm>
+        <connection>scm:git:github.com/msgpack/msgpack-java.git</connection>
+        <developerConnection>scm:git:git@github.com:msgpack/msgpack-java.git</developerConnection>
+        <url>github.com/msgpack/msgpack-java.git</url>
+    </scm>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <developers>
+        <developer>
+            <id>frsyuki</id>
+            <name>Sadayuki Furuhashi</name>
+            <email>frsyuki@users.sourceforge.jp</email>
+        </developer>
+        <developer>
+            <id>muga</id>
+            <name>Muga Nishizawa</name>
+            <email>muga.nishizawa@gmail.com</email>
+        </developer>
+        <developer>
+            <id>oza</id>
+            <name>Tsuyoshi Ozawa</name>
+            <url>https://github.com/oza</url>
+        </developer>
+        <developer>
+            <id>komamitsu</id>
+            <name>Mitsunori Komatsu</name>
+            <email>komamitsu@gmail.com</email>
+        </developer>
+        <developer>
+            <id>xerial</id>
+            <name>Taro L. Saito</name>
+            <email>leo@xerial.org</email>
+        </developer>
+    </developers>
+    <dependencies>
+        <dependency>
+            <groupId>org.msgpack</groupId>
+            <artifactId>msgpack-core</artifactId>
+            <version>0.8.20</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.9.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.novocode</groupId>
+            <artifactId>junit-interface</artifactId>
+            <version>0.11</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-math3</artifactId>
+            <version>3.6.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

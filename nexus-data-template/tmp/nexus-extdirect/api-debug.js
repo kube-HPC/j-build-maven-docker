@@ -154,13 +154,13 @@ NX.direct.api.REMOTING_API = {
         formHandler: false
       },
       {
-        name: 'defaultWorkDirectory'/*() => org.sonatype.nexus.coreui.PathSeparatorXO */,
-        len: 0,
+        name: 'readGroupable'/*(org.sonatype.nexus.extdirect.model.StoreLoadParameters) => java.util.List */,
+        len: 1,
         formHandler: false
       },
       {
-        name: 'readGroupable'/*(org.sonatype.nexus.extdirect.model.StoreLoadParameters) => java.util.List */,
-        len: 1,
+        name: 'defaultWorkDirectory'/*() => org.sonatype.nexus.coreui.PathSeparatorXO */,
+        len: 0,
         formHandler: false
       },
       {
@@ -804,37 +804,7 @@ NX.direct.api.REMOTING_API = {
     ],
     cleanup_CleanupPolicy: [
       {
-        name: 'getApplicableFields'/*(java.util.List) => java.util.Map */,
-        len: 1,
-        formHandler: false
-      },
-      {
-        name: 'usage'/*(String) => java.util.Map */,
-        len: 1,
-        formHandler: false
-      },
-      {
-        name: 'update'/*(org.sonatype.nexus.cleanup.storage.CleanupPolicyXO) => org.sonatype.nexus.cleanup.storage.CleanupPolicyXO */,
-        len: 1,
-        formHandler: false
-      },
-      {
-        name: 'create'/*(org.sonatype.nexus.cleanup.storage.CleanupPolicyXO) => org.sonatype.nexus.cleanup.storage.CleanupPolicyXO */,
-        len: 1,
-        formHandler: false
-      },
-      {
         name: 'readByFormat'/*(org.sonatype.nexus.extdirect.model.StoreLoadParameters) => java.util.List */,
-        len: 1,
-        formHandler: false
-      },
-      {
-        name: 'readAll'/*() => java.util.List */,
-        len: 0,
-        formHandler: false
-      },
-      {
-        name: 'remove'/*(String) => void */,
         len: 1,
         formHandler: false
       }
@@ -864,21 +834,6 @@ NX.direct.api.REMOTING_API = {
       }
     ],
     ahc_Component: [
-      {
-        name: 'getPredefinedValues'/*(String) => com.sonatype.nexus.ahc.internal.AhcParamsXO */,
-        len: 1,
-        formHandler: false
-      },
-      {
-        name: 'analyzeAsset'/*(String, String, String, String, String, String) => void */,
-        len: 6,
-        formHandler: false
-      },
-      {
-        name: 'acceptTermsOfService'/*() => void */,
-        len: 0,
-        formHandler: false
-      },
       {
         name: 'containsApplication'/*(String) => boolean */,
         len: 1,
@@ -942,13 +897,6 @@ NX.direct.api.REMOTING_API = {
       {
         name: 'read'/*() => java.util.Map */,
         len: 0,
-        formHandler: false
-      }
-    ],
-    cleanup_CleanupPreview: [
-      {
-        name: 'previewCleanup'/*(org.sonatype.nexus.extdirect.model.StoreLoadParameters) => org.sonatype.nexus.extdirect.model.PagedResponse */,
-        len: 1,
         formHandler: false
       }
     ]
