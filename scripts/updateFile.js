@@ -26,7 +26,7 @@ const main = async () => {
         per_page: 1
     });
     const masterSha = masterShaResponse.data[0].sha;
-    const branchName = `update_java_wrapper_to_${value.replace('.', '_')}`;
+    const branchName = `update_${process.env.wrapper}_wrapper_to_${value.replace('.', '_')}`;
     await octokit.git.createRef({
         ...ownerRepo,
         ref: `refs/heads/${branchName}`,
@@ -43,7 +43,7 @@ const main = async () => {
 
     await octokit.pulls.create({
         ...ownerRepo,
-        title: `update java wrapper to ${value}`,
+        title: `update ${process.env.wrapper} wrapper to ${value}`,
         head: branchName,
         base: `${process.env.targetBranch}`
     });
