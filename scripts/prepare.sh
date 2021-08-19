@@ -25,13 +25,13 @@ docker  run --network=${NETWORK_NAME} --rm  -v ${SCRIPTPATH}/../m2-project:/m2-p
 docker  run --network=${NETWORK_NAME} --rm  -v ${SCRIPTPATH}/../m2-project:/m2-project -w /m2-project/wrapper-download maven mvn -Drevision=${revision} --settings /m2-project/settings.xml package
 VERSION=`cat $SCRIPTPATH/../python-wrapper-version.txt`
 echo hkube-python-wrapper==$VERSION>$SCRIPTPATH/requirements.txt
-MAX_RETRY=20
+MAX_RETRY=30
 RETRY=0
 until [ "$RETRY" -ge "$MAX_RETRY" ]
 do
 	RETRY=$((RETRY+1))
 	FOUND=$(curl localhost:8081/repository/python/simple/hkube-python-wrapper/)
-	echo $FOUND
+	export LAST_FOUND=$FOUND
 	echo $FOUND | grep $VERSION 
 	NOT_FOUND=$?
 	if [ $NOT_FOUND -eq 0 ]
@@ -40,9 +40,10 @@ do
 	    break
 	fi
 	echo python version $VERSION not ready yet. Retry $RETRY of $MAX_RETRY in 30 seconds
-	sleep 30
+	sleep 60
 done
 if [ $RETRY == $MAX_RETRY ]; then
+	echo $LAST_FOUND
 	echo Failed to download python wrapper $VERSION. Try running the action again
 	exit 1
 fi
