@@ -23,7 +23,29 @@ export revision=`cat  $SCRIPTPATH/../java-wrapper-version.txt`
 envsubst < ${SCRIPTPATH}/../m2-project/algorithm/pomTemplate.xml >  ${SCRIPTPATH}/../m2-project/algorithm/pom.xml
 docker  run --network=${NETWORK_NAME} --rm  -v ${SCRIPTPATH}/../m2-project:/m2-project -w /m2-project/algorithm maven mvn --settings /m2-project/settings.xml package  
 docker  run --network=${NETWORK_NAME} --rm  -v ${SCRIPTPATH}/../m2-project:/m2-project -w /m2-project/wrapper-download maven mvn -Drevision=${revision} --settings /m2-project/settings.xml package
-echo hkube-python-wrapper==`cat $SCRIPTPATH/../python-wrapper-version.txt`>$SCRIPTPATH/requirements.txt
+VERSION=`cat $SCRIPTPATH/../python-wrapper-version.txt`
+echo hkube-python-wrapper==$VERSION>$SCRIPTPATH/requirements.txt
+MAX_RETRY=20
+RETRY=0
+until [ "$RETRY" -ge "$MAX_RETRY" ]
+do
+	RETRY=$((RETRY+1))
+	FOUND=$(crul localhost:8081/repository/python/simple/hkube-python-wrapper/)
+	echo $FOUND
+	echo $FOUND | grep $VERSION 
+	NOT_FOUND=$?
+	if [ $NOT_FOUND -eq 0 ]
+	then
+	    echo found version $VERSION
+	    break
+	fi
+	echo python version $VERSION not ready yet. Retry $RETRY of $MAX_RETRY in 30 seconds
+	sleep 30
+done
+if [ $RETRY == $MAX_RETRY ]; then
+	echo Failed to download python wrapper $VERSION. Try running the action again
+	exit 1
+fi
 versions="python:2.7 python:3.5 python:3.6 python:3.7"
 for v in $versions
 do
