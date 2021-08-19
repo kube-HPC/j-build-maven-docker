@@ -30,7 +30,7 @@ RETRY=0
 until [ "$RETRY" -ge "$MAX_RETRY" ]
 do
 	RETRY=$((RETRY+1))
-	FOUND=$(crul localhost:8081/repository/python/simple/hkube-python-wrapper/)
+	FOUND=$(curl localhost:8081/repository/python/simple/hkube-python-wrapper/)
 	echo $FOUND
 	echo $FOUND | grep $VERSION 
 	NOT_FOUND=$?
