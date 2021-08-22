@@ -23,7 +23,7 @@ osgi.ee; (&(osgi.ee=JavaSE)(version=1.8))
 osgi.wiring.package; (&(osgi.wiring.package=org.sonatype.nexus.repository.content.store)(version>=3.29.0))
 274; version=3.29.2
 osgi.wiring.package; (&(osgi.wiring.package=org.sonatype.nexus.repository.upload)(version>=3.29.0))
-257; version=3.29.2
+259; version=3.29.2
 osgi.wiring.package; (&(osgi.wiring.package=org.sonatype.nexus.repository.content.search)(version>=3.29.0))
 274; version=3.29.2
 osgi.wiring.package; (&(osgi.wiring.package=org.sonatype.nexus.cleanup.config)(version>=3.29.0))
