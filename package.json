@@ -6,7 +6,9 @@
   "scripts": {
     "build": "npm run prepare && ./dockerfile/build.sh artifacts-registry",
     "prepare": "./scripts/prepare.sh",
-    "update-file": "node scripts/updateFile.js"
+    "update-file": "node scripts/updateFile.js",
+    "update-package-json": "node scripts/updatePackageJson.js",
+    "update-nodejs-in-builder": "node scripts/updateNodejsInBuilder.js"
   },
   "repository": {
     "type": "git",

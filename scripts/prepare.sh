@@ -53,7 +53,8 @@ do
   echo downloading for $v
   docker run --network=${NETWORK_NAME} --rm -v $SCRIPTPATH:/workdir  $v pip  install --trusted-host nexus --index-url http://nexus:8081/repository/python/simple -r  /workdir/requirements.txt
 done
-
+mkdir $SCRIPTPATH/packages
+docker run --network=${NETWORK_NAME} --rm  -v $SCRIPTPATH/packages:/packages node:14.5.0 /bin/bash -c 'npm config get cache && npm install --cache /tmp/npmcache  --prefix /packages/ --registry=http://nexus:8081/repository/npm'
 
 
 rm -r -f ${SCRIPTPATH}/../nexus-data/javaprefs/.java

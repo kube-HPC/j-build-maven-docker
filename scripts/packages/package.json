@@ -1,0 +1,12 @@
+{
+    "name": "nodejs-env",
+    "version": "1.2.1",
+    "description": "nodejs environment for hkube auto build",
+    "main": "app.js",
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@hkube/nodejs-wrapper": "^2.0.45"
+    },
+    "devDependencies": {}
+}

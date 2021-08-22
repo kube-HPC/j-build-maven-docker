@@ -29,6 +29,12 @@ jobs:
           git commit -m "update ${{github.event.client_payload.wrapper}} version [skip ci]"
           npm version patch -m "$(git log -1 --pretty=%B) .... bump version [skip ci]"       
           git push origin version-branch:main --follow-tags
+      - name: update nodejs package.json for build
+        run: |
+          export packageJSONTemplate=`cat scripts/packages/package.json`
+          export version=`cat nodejs-wrapper-version.txt`
+          npm run update-package-json>scripts/packages/package.json
+
       - name: build
         run: |
           docker login --username yehiyam --password ${DOCKER_HUB_PASS}
@@ -59,3 +65,12 @@ jobs:
           wrapper: "python"
           repository: "hkube"
           targetBranch: "master"
+
+      - name: create nodejs pr in hkube
+        if: "github.event.client_payload.wrapper == 'nodejs'"
+        run: |
+          export version=`cat nodejs-wrapper-version.txt`
+          npm install --no-package-lock --no-save @octokit/rest@^18.0.0
+          npm run update-builder
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
