@@ -71,6 +71,6 @@ jobs:
         run: |
           export version=`cat nodejs-wrapper-version.txt`
           npm install --no-package-lock --no-save @octokit/rest@^18.0.0
-          npm run update-builder
+          npm run update-nodejs-in-builder
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
