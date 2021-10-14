@@ -1,6 +1,6 @@
 {
   "name": "artifacts-registry",
-  "version": "2.1.25",
+  "version": "2.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
