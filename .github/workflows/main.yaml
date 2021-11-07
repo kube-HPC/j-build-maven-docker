@@ -6,7 +6,9 @@ name: CI-MAIN
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [main]
+    branches:
+      - master
+      - release*
   workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -29,11 +31,17 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 14.x
+      - name: set branch
+        run: |
+          echo GITHUB_REF=$GITHUB_REF
+          export BRANCH=${GITHUB_REF##*/}
+          echo BRANCH=$BRANCH
+          echo BRANCH=$BRANCH >> $GITHUB_ENV
       - name: version
         run: |
           git checkout -f -b version-branch
           npm version patch -m "$(git log -1 --pretty=%B) .... bump version [skip ci]"
-          git push origin version-branch:main --follow-tags
+          git push origin version-branch:${GITHUB_REF##*/} --follow-tags
       - name: build
         run: |
           docker login --username yehiyam --password ${DOCKER_HUB_PASS}
@@ -46,5 +54,7 @@ jobs:
         with:
           route: POST /repos/kube-HPC/release-manager/dispatches
           event_type: trigger
+          client_payload: "{\"BRANCH\": \"${{ env.BRANCH }}\" }"
         env:
           GITHUB_TOKEN: '${{ secrets.GH_TOKEN }}'
+          BRANCH: ${{ env.BRANCH }}
