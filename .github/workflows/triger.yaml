@@ -74,3 +74,4 @@ jobs:
           npm run update-nodejs-in-builder
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          updatedFilePath: "core/algorithm-builder/environments/nodejs/wrapper/package.json;core/algorithm-gateway/package.json;core/algorithm-debug/package.json;core/algorithm-output/package.json"
