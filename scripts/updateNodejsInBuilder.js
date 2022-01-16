@@ -8,7 +8,7 @@ const ownerRepo = {
 };
 
 const main = async () => {
-
+    const octokit = new Octokit({ auth: process.env.GH_TOKEN });
     const masterShaResponse = await octokit.repos.listCommits({
         ...ownerRepo,
         per_page: 1
@@ -23,7 +23,6 @@ const main = async () => {
 
     const files = process.env.updatedFilePath.split(";");
     await Promise.all(files.map(async file => {
-        const octokit = new Octokit({ auth: process.env.GH_TOKEN });
         const packageJsonContentResponse = await octokit.repos.getContent({
             ...ownerRepo,
             path: file
