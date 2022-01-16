@@ -22,7 +22,7 @@ const main = async () => {
     });
 
     const files = process.env.updatedFilePath.split(";");
-    files.forEach(file => {
+    await Promise.all(files.map(async file => {
         const octokit = new Octokit({ auth: process.env.GH_TOKEN });
         const packageJsonContentResponse = await octokit.repos.getContent({
             ...ownerRepo,
@@ -44,7 +44,7 @@ const main = async () => {
             sha: packageJsonSha,
             content: newContent
         });
-    });
+    }));
     await octokit.pulls.create({
         ...ownerRepo,
         title: `update nodejs wrapper to ${version}`,
