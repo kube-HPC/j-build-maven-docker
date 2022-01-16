@@ -20,30 +20,30 @@ const main = async () => {
         ref: `refs/heads/${branchName}`,
         sha: masterSha
     });
-    let lastBranchCommit = masterSha;
+    let fileSha;
     const files = process.env.updatedFilePath.split(";");
     await Promise.all(files.map(async file => {
         const packageJsonContentResponse = await octokit.repos.getContent({
             ...ownerRepo,
-            path: file
+            path: file,
+            ref: branchName
         });
         const packageJsonContentStr = Buffer.from(packageJsonContentResponse.data.content, 'base64').toString('utf-8');
         const packageJsonContent = JSON.parse(packageJsonContentStr);
-        // const packageJsonSha = packageJsonContentResponse.data.sha;
+        fileSha = packageJsonContentResponse.data.sha;
         // update package json
         packageJsonContent.dependencies['@hkube/nodejs-wrapper'] = `^${version}`;
         const newContent = Buffer.from(JSON.stringify(packageJsonContent, null, 2)).toString('base64');
 
 
-        const commitResponse = await octokit.repos.createOrUpdateFileContents({
+        await octokit.repos.createOrUpdateFileContents({
             ...ownerRepo,
             path: file,
             message: `update ${file} to ${version}`,
             branch: branchName,
-            sha: lastBranchCommit,
+            sha: fileSha,
             content: newContent
         });
-        lastBranchCommit = commitResponse.commit.sha;
     }));
     await octokit.pulls.create({
         ...ownerRepo,
