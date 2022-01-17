@@ -72,6 +72,8 @@ jobs:
           export version=`cat nodejs-wrapper-version.txt`
           npm install --no-package-lock --no-save @octokit/rest@^18.0.0
           npm run update-nodejs-in-builder
+          ./scripts/invokeByDocker package-lock-update.sh
+          npm run create-nodejs-pr
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           updatedFilePath: "core/algorithm-builder/environments/nodejs/wrapper/package.json;core/algorithm-gateway/package.json;core/algorithm-debug/package.json;core/algorithm-output/package.json"

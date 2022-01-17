@@ -8,7 +8,8 @@
     "prepare": "./scripts/prepare.sh",
     "update-file": "node scripts/updateFile.js",
     "update-package-json": "node scripts/updatePackageJson.js",
-    "update-nodejs-in-builder": "node scripts/updateNodejsInBuilder.js"
+    "update-nodejs-in-builder": "node scripts/updateNodejsInBuilder.js",
+    "create-nodejs-pr": "node scripts/createNodeJSPullRequest.js"
   },
   "repository": {
     "type": "git",

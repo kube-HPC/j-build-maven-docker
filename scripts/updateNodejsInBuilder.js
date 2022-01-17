@@ -48,13 +48,6 @@ const main = async () => {
             return resp;
         }
     }).reduce((p, fn) => p.then(fn), Promise.resolve()); // a way to run Promise.all synchronously 
-    await octokit.pulls.create({
-        ...ownerRepo,
-        title: `update nodejs wrapper to ${version}`,
-        head: branchName,
-        base: 'master'
-    });
-
 };
 
 
