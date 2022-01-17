@@ -22,29 +22,32 @@ const main = async () => {
     });
     let fileSha;
     const files = process.env.updatedFilePath.split(";");
-    await Promise.all(files.map(async file => {
-        const packageJsonContentResponse = await octokit.repos.getContent({
-            ...ownerRepo,
-            path: file,
-            ref: branchName
-        });
-        const packageJsonContentStr = Buffer.from(packageJsonContentResponse.data.content, 'base64').toString('utf-8');
-        const packageJsonContent = JSON.parse(packageJsonContentStr);
-        fileSha = packageJsonContentResponse.data.sha;
-        // update package json
-        packageJsonContent.dependencies['@hkube/nodejs-wrapper'] = `^${version}`;
-        const newContent = Buffer.from(JSON.stringify(packageJsonContent, null, 2)).toString('base64');
+    await files.map(file => {
+        return async () => {
+            const packageJsonContentResponse = await octokit.repos.getContent({
+                ...ownerRepo,
+                path: file,
+                ref: branchName
+            });
+            const packageJsonContentStr = Buffer.from(packageJsonContentResponse.data.content, 'base64').toString('utf-8');
+            const packageJsonContent = JSON.parse(packageJsonContentStr);
+            fileSha = packageJsonContentResponse.data.sha;
+            // update package json
+            packageJsonContent.dependencies['@hkube/nodejs-wrapper'] = `^${version}`;
+            const newContent = Buffer.from(JSON.stringify(packageJsonContent, null, 2)).toString('base64');
 
 
-        await octokit.repos.createOrUpdateFileContents({
-            ...ownerRepo,
-            path: file,
-            message: `update ${file} to ${version}`,
-            branch: branchName,
-            sha: fileSha,
-            content: newContent
-        });
-    }));
+            const resp = await octokit.repos.createOrUpdateFileContents({
+                ...ownerRepo,
+                path: file,
+                message: `update ${file} to ${version}`,
+                branch: branchName,
+                sha: fileSha,
+                content: newContent
+            });
+            return resp;
+        }
+    }).reduce((p, fn) => p.then(fn), Promise.resolve()); // a way to run Promise.all synchronously 
     await octokit.pulls.create({
         ...ownerRepo,
         title: `update nodejs wrapper to ${version}`,
@@ -53,5 +56,6 @@ const main = async () => {
     });
 
 };
+
 
 main();
