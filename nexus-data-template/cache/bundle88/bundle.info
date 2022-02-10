@@ -1,6 +1,6 @@
 88
-wrap:file:system/com/palominolabs/metrics/metrics-guice/3.2.2/metrics-guice-3.2.2.jar$overwrite=merge&Import-Package=com.codahale.metrics*,*
-32
+wrap:file:system/org/jboss/resteasy/resteasy-validator-provider/3.15.2.Final/resteasy-validator-provider-3.15.2.Final.jar$Bundle-SymbolicName=resteasy-validator-provider&Fragment-Host=org.sonatype.nexus.siesta
+2
 80
-1629621457550
+1644502591701
 0

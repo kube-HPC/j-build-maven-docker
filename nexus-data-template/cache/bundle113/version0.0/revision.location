@@ -1,1 +1,1 @@
-wrap:file:system/org/sonatype/gossip/gossip-support/1.8/gossip-support-1.8.jar
+reference:file:system/com/google/inject/extensions/guice-assistedinject/5.0.1/guice-assistedinject-5.0.1.jar

@@ -1,6 +1,6 @@
 75
-wrap:file:system/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar$overwrite=merge&Fragment-Host=org.hibernate.validator
-2
+mvn:org.sonatype.nexus/nexus-bootstrap/3.37.3-02
+32
 80
-1629621456587
+1644502585815
 0

@@ -1,1 +1,1 @@
-reference:file:system/io/dropwizard/metrics/metrics-healthchecks/4.1.0/metrics-healthchecks-4.1.0.jar
+wrap:file:system/io/prometheus/simpleclient_dropwizard/0.6.0/simpleclient_dropwizard-0.6.0.jar$overwrite=merge&Import-Package=com.codahale.metrics*,*

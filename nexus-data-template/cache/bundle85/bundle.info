@@ -1,6 +1,6 @@
 85
-wrap:file:system/com/github/fge/jackson-coreutils/1.6/jackson-coreutils-1.6.jar$overwrite=merge&Import-Package=*
-32
+wrap:file:system/org/jboss/resteasy/resteasy-jackson2-provider/3.15.2.Final/resteasy-jackson2-provider-3.15.2.Final.jar$Bundle-SymbolicName=resteasy-jackson2-provider&Fragment-Host=org.sonatype.nexus.siesta
+2
 80
-1629621457473
+1644502591337
 0

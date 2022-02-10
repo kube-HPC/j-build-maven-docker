@@ -1,1 +1,1 @@
-wrap:file:system/org/jboss/resteasy/resteasy-jaxb-provider/3.13.0.Final/resteasy-jaxb-provider-3.13.0.Final.jar$Bundle-SymbolicName=resteasy-jaxb-provider&Fragment-Host=org.sonatype.nexus.siesta
+wrap:file:system/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar$Bundle-SymbolicName=httpcore

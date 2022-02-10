@@ -1,6 +1,6 @@
 26
-reference:file:/opt/sonatype/nexus/system/org/eclipse/jetty/jetty-server/9.4.33.v20201020/jetty-server-9.4.33.v20201020.jar
+reference:file:/opt/sonatype/nexus/system/org/eclipse/jetty/jetty-client/9.4.43.v20210629/jetty-client-9.4.43.v20210629.jar
 32
 8
-1629621453743
+1644502581220
 0

@@ -1,6 +1,6 @@
 76
-wrap:file:system/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar$Bundle-SymbolicName=httpcore
+wrap:mvn:uk.org.lidalia/sysout-over-slf4j/1.0.2
 32
 80
-1629621456602
+1644502585843
 0

@@ -1,6 +1,6 @@
 119
-reference:file:system/com/fasterxml/jackson/core/jackson-core/2.11.2/jackson-core-2.11.2.jar
+wrap:file:system/org/sonatype/gossip/gossip-support/1.8/gossip-support-1.8.jar
 32
 80
-1629621458124
+1644502594830
 0

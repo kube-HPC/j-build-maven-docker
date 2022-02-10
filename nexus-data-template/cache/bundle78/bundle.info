@@ -1,6 +1,6 @@
 78
-wrap:file:system/org/jboss/resteasy/resteasy-jaxrs/3.13.0.Final/resteasy-jaxrs-3.13.0.Final.jar$Bundle-SymbolicName=resteasy-jaxrs&Fragment-Host=org.sonatype.nexus.siesta
+wrap:file:system/org/glassfish/jakarta.el/3.0.4/jakarta.el-3.0.4.jar$overwrite=merge&Fragment-Host=org.hibernate.validator
 2
 80
-1629621456841
+1644502587678
 0

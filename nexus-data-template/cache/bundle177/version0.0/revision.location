@@ -1,1 +1,1 @@
-wrap:file:system/com/papertrail/profiler/1.0.2/profiler-1.0.2.jar
+reference:file:system/io/dropwizard/metrics/metrics-httpclient/4.1.0/metrics-httpclient-4.1.0.jar

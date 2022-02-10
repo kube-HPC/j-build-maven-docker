@@ -1,1 +1,1 @@
-wrap:file:system/io/swagger/swagger-jaxrs/1.6.2/swagger-jaxrs-1.6.2.jar$overwrite=merge&Import-Package=com.google.common.*,org.reflections.*;resolution:=optional,*
+wrap:file:system/com/github/fge/json-patch/1.9/json-patch-1.9.jar$overwrite=merge&Import-Package=*

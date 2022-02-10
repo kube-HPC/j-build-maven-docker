@@ -135,11 +135,6 @@ NX.direct.api.REMOTING_API = {
         formHandler: false
       },
       {
-        name: 'promoteToGroup',
-        len: 1,
-        formHandler: false
-      },
-      {
         name: 'readNames',
         len: 0,
         formHandler: false
@@ -248,12 +243,12 @@ NX.direct.api.REMOTING_API = {
     ],
     coreui_Component: [
       {
-        name: 'canDeleteAsset',
+        name: 'readAsset',
         len: 2,
         formHandler: false
       },
       {
-        name: 'readAsset',
+        name: 'canDeleteAsset',
         len: 2,
         formHandler: false
       },
@@ -340,6 +335,16 @@ NX.direct.api.REMOTING_API = {
         name: 'readStatus',
         len: 0,
         formHandler: false
+      },
+      {
+        name: 'setLog4JVisualizerEnabled',
+        len: 1,
+        formHandler: false
+      },
+      {
+        name: 'isAvailableLog4jDisclaimer',
+        len: 0,
+        formHandler: false
       }
     ],
     s3_S3: [
@@ -370,6 +375,23 @@ NX.direct.api.REMOTING_API = {
       {
         name: 'getUploadDefinitions',
         len: 0,
+        formHandler: false
+      }
+    ],
+    coreui_ProprietaryRepositories: [
+      {
+        name: 'read',
+        len: 0,
+        formHandler: false
+      },
+      {
+        name: 'readPossibleRepos',
+        len: 0,
+        formHandler: false
+      },
+      {
+        name: 'update',
+        len: 1,
         formHandler: false
       }
     ],
@@ -731,13 +753,13 @@ NX.direct.api.REMOTING_API = {
     ],
     coreui_Repository: [
       {
-        name: 'readReferencesAddingEntriesForAllFormats',
-        len: 1,
+        name: 'getBrowseableFormats',
+        len: 0,
         formHandler: false
       },
       {
-        name: 'getBrowseableFormats',
-        len: 0,
+        name: 'readReferencesAddingEntriesForAllFormats',
+        len: 1,
         formHandler: false
       },
       {
