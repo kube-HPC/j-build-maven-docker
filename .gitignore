@@ -1,3 +1,4 @@
 /m2-project/algorithm/target
 /m2-project/algorithm/pom.xml
 nexus-data
+**/node_modules
