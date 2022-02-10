@@ -51,7 +51,7 @@ versions="python:2.7 python:3.5 python:3.6 python:3.7"
 for v in $versions
 do
   echo downloading for $v
-  docker run --network=${NETWORK_NAME} --rm -v $SCRIPTPATH:/workdir  $v pip  install --trusted-host nexus --index-url http://nexus:8081/repository/python/simple -r  /workdir/requirements.txt
+  docker run --network=${NETWORK_NAME} --rm -v $SCRIPTPATH:/workdir $v bash -c "pip install twine && mkdir -p /tmp/pkg && cd /tmp/pkg && pip wheel --trusted-host nexus --index-url http://nexus:8081/repository/python/simple -r  /workdir/requirements.txt && twine upload --skip-existing --sign --username=$NEXUS_USER --password=$NEXUS_PASSWORD /tmp/pkg/*.whl"
 done
 mkdir $SCRIPTPATH/packages
 docker run --network=${NETWORK_NAME} --rm  -v $SCRIPTPATH/packages:/packages node:14.5.0 /bin/bash -c 'npm config get cache && npm install --cache /tmp/npmcache  --prefix /packages/ --registry=http://nexus:8081/repository/npm'
