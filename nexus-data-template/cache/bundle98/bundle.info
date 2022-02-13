@@ -1,6 +1,6 @@
 98
-reference:file:system/com/google/inject/extensions/guice-servlet/4.2.3/guice-servlet-4.2.3.jar
-2
+wrap:file:system/org/quartz-scheduler/quartz/2.3.2/quartz-2.3.2.jar$overwrite=merge&Import-Package=*;resolution:=optional
+32
 80
-1629621458002
+1644502593551
 0

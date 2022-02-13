@@ -1,6 +1,6 @@
 114
-wrap:file:system/org/sonatype/gossip/gossip-bootstrap/1.8/gossip-bootstrap-1.8.jar
+reference:file:system/javax/enterprise/cdi-api/1.2/cdi-api-1.2.jar
 32
 80
-1629621458090
+1644502594734
 0

@@ -1,6 +1,6 @@
 89
-wrap:file:system/io/prometheus/simpleclient_dropwizard/0.6.0/simpleclient_dropwizard-0.6.0.jar$overwrite=merge&Import-Package=com.codahale.metrics*,*
-32
+wrap:file:system/org/jboss/resteasy/resteasy-client/3.15.2.Final/resteasy-client-3.15.2.Final.jar$Bundle-SymbolicName=resteasy-client&Fragment-Host=org.sonatype.nexus.siesta
+2
 80
-1629621457566
+1644502591755
 0

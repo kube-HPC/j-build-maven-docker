@@ -1,1 +1,1 @@
-reference:file:system/com/google/inject/extensions/guice-servlet/4.2.3/guice-servlet-4.2.3.jar
+wrap:file:system/org/quartz-scheduler/quartz/2.3.2/quartz-2.3.2.jar$overwrite=merge&Import-Package=*;resolution:=optional

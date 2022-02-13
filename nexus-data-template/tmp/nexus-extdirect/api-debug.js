@@ -144,11 +144,6 @@ NX.direct.api.REMOTING_API = {
         formHandler: false
       },
       {
-        name: 'promoteToGroup'/*(String) => org.sonatype.nexus.coreui.BlobStoreXO */,
-        len: 1,
-        formHandler: false
-      },
-      {
         name: 'readNames'/*() => java.util.List */,
         len: 0,
         formHandler: false
@@ -257,12 +252,12 @@ NX.direct.api.REMOTING_API = {
     ],
     coreui_Component: [
       {
-        name: 'canDeleteAsset'/*(String, String) => boolean */,
+        name: 'readAsset'/*(String, String) => org.sonatype.nexus.coreui.AssetXO */,
         len: 2,
         formHandler: false
       },
       {
-        name: 'readAsset'/*(String, String) => org.sonatype.nexus.coreui.AssetXO */,
+        name: 'canDeleteAsset'/*(String, String) => boolean */,
         len: 2,
         formHandler: false
       },
@@ -349,6 +344,16 @@ NX.direct.api.REMOTING_API = {
         name: 'readStatus'/*() => String */,
         len: 0,
         formHandler: false
+      },
+      {
+        name: 'setLog4JVisualizerEnabled'/*(boolean) => void */,
+        len: 1,
+        formHandler: false
+      },
+      {
+        name: 'isAvailableLog4jDisclaimer'/*() => String */,
+        len: 0,
+        formHandler: false
       }
     ],
     s3_S3: [
@@ -379,6 +384,23 @@ NX.direct.api.REMOTING_API = {
       {
         name: 'getUploadDefinitions'/*() => java.util.Collection */,
         len: 0,
+        formHandler: false
+      }
+    ],
+    coreui_ProprietaryRepositories: [
+      {
+        name: 'read'/*() => org.sonatype.nexus.coreui.ProprietaryRepositoriesXO */,
+        len: 0,
+        formHandler: false
+      },
+      {
+        name: 'readPossibleRepos'/*() => java.util.List */,
+        len: 0,
+        formHandler: false
+      },
+      {
+        name: 'update'/*(org.sonatype.nexus.coreui.ProprietaryRepositoriesXO) => org.sonatype.nexus.coreui.ProprietaryRepositoriesXO */,
+        len: 1,
         formHandler: false
       }
     ],
@@ -740,13 +762,13 @@ NX.direct.api.REMOTING_API = {
     ],
     coreui_Repository: [
       {
-        name: 'readReferencesAddingEntriesForAllFormats'/*(org.sonatype.nexus.extdirect.model.StoreLoadParameters) => java.util.List */,
-        len: 1,
+        name: 'getBrowseableFormats'/*() => java.util.List */,
+        len: 0,
         formHandler: false
       },
       {
-        name: 'getBrowseableFormats'/*() => java.util.List */,
-        len: 0,
+        name: 'readReferencesAddingEntriesForAllFormats'/*(org.sonatype.nexus.extdirect.model.StoreLoadParameters) => java.util.List */,
+        len: 1,
         formHandler: false
       },
       {

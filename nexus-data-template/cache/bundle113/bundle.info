@@ -1,6 +1,6 @@
 113
-wrap:file:system/org/sonatype/gossip/gossip-support/1.8/gossip-support-1.8.jar
-32
+reference:file:system/com/google/inject/extensions/guice-assistedinject/5.0.1/guice-assistedinject-5.0.1.jar
+2
 80
-1629621458067
+1644502594718
 0

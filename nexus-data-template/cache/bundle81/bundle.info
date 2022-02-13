@@ -1,6 +1,6 @@
 81
-wrap:file:system/org/jboss/resteasy/resteasy-jaxb-provider/3.13.0.Final/resteasy-jaxb-provider-3.13.0.Final.jar$Bundle-SymbolicName=resteasy-jaxb-provider&Fragment-Host=org.sonatype.nexus.siesta
-2
+wrap:file:system/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar$Bundle-SymbolicName=httpcore
+32
 80
-1629621457168
+1644502588534
 0

@@ -1,1 +1,1 @@
-wrap:file:system/org/glassfish/jakarta.el/3.0.3/jakarta.el-3.0.3.jar$overwrite=merge&Fragment-Host=org.hibernate.validator
+reference:file:/opt/sonatype/nexus/system/org/apache/karaf/scr/org.apache.karaf.scr.state/4.3.2/org.apache.karaf.scr.state-4.3.2.jar

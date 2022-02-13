@@ -1,6 +1,6 @@
 7
-reference:file:/opt/sonatype/nexus/system/io/dropwizard/metrics/metrics-jetty9/4.1.0/metrics-jetty9-4.1.0.jar
+reference:file:/opt/sonatype/nexus/system/io/dropwizard/metrics/metrics-logback/4.1.0/metrics-logback-4.1.0.jar
 32
 8
-1629621453697
+1644502580804
 0

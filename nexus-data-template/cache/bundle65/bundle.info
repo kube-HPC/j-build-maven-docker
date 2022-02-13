@@ -1,6 +1,6 @@
 65
-reference:file:/opt/sonatype/nexus/system/org/jline/jline-terminal-jansi/3.14.1/jline-terminal-jansi-3.14.1.jar
-2
+reference:file:/opt/sonatype/nexus/system/org/apache/karaf/features/org.apache.karaf.features.command/4.3.2/org.apache.karaf.features.command-4.3.2.jar
+32
 30
-1629621453841
+1644502582159
 0
