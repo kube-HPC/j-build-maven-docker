@@ -24,3 +24,6 @@ jobs:
         with:
           node-version: 14.x
       - run: npm run prepare
+        env:
+          NEXUS_USER: {{ secrets.NEXUS_USER }}
+          NEXUS_PASSWORD: {{ secrets.NEXUS_PASSWORD }}
