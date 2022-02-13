@@ -48,8 +48,8 @@ jobs:
           PRIVATE_REGISTRY=docker.io/hkube npm run build
         env:
           DOCKER_HUB_PASS: ${{ secrets.DOCKER_PASSWORD }}
-          NEXUS_USER: {{ secrets.NEXUS_USER }}
-          NEXUS_PASSWORD: {{ secrets.NEXUS_PASSWORD }}
+          NEXUS_USER: ${{ secrets.NEXUS_USER }}
+          NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
       - name: trigger
         id: trigger
         uses: octokit/request-action@v2.x
