@@ -47,7 +47,7 @@ if [ $RETRY == $MAX_RETRY ]; then
 	echo Failed to download python wrapper $VERSION. Try running the action again
 	exit 1
 fi
-versions="python:2.7 python:3.5 python:3.6 python:3.7"
+versions="python:2.7 python:3.5 python:3.6 python:3.7 python:3.8 python:3.9 python:3.10"
 for v in $versions
 do
   echo downloading for $v
