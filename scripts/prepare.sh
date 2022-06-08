@@ -25,7 +25,7 @@ docker  run --network=${NETWORK_NAME} --rm  -v ${SCRIPTPATH}/../m2-project:/m2-p
 docker  run --network=${NETWORK_NAME} --rm  -v ${SCRIPTPATH}/../m2-project:/m2-project -w /m2-project/wrapper-download maven mvn -Drevision=${revision} --settings /m2-project/settings.xml package
 VERSION=`cat $SCRIPTPATH/../python-wrapper-version.txt`
 echo hkube-python-wrapper==$VERSION>$SCRIPTPATH/requirements.txt
-MAX_RETRY=30
+MAX_RETRY=90
 RETRY=0
 until [ "$RETRY" -ge "$MAX_RETRY" ]
 do
