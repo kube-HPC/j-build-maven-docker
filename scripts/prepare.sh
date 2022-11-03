@@ -8,7 +8,7 @@ docker network rm ${NETWORK_NAME} || true
 docker network create ${NETWORK_NAME}
 cp -r nexus-data-template nexus-data
 chmod -R 777 nexus-data
-docker run -d --network=${NETWORK_NAME} -p 8081:8081 -u $(id -u) --name nexus -v ${SCRIPTPATH}/../nexus-data/:/nexus-data   sonatype/nexus3
+docker run -d --network=${NETWORK_NAME} -p 8081:8081 -u $(id -u) --name nexus -v ${SCRIPTPATH}/../nexus-data/:/nexus-data   sonatype/nexus3:3.40.1
 echo Waiting for nexus to be up
 ret=$(curl -s -o /dev/null -w "%{http_code}" localhost:8081)
 while [[ $ret != "200" ]]; do
